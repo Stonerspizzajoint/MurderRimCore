@@ -1,0 +1,23 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <!-- Replace beardOffset vector (X,Y,Z). Example below zeros it out. -->
+    <operations>
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="MRWD_Drone_Head"]/beardOffset</xpath>
+        <value>
+          <!-- Set your desired offset here -->
+          <beardOffset>(0, 0, 0)</beardOffset>
+        </value>
+      </li>
+
+      <!-- Replace beardOffsetXEast scalar. Example below zeros it out. -->
+      <li Class="PatchOperationReplace">
+        <xpath>Defs/HeadTypeDef[defName="MRWD_Drone_Head"]/beardOffsetXEast</xpath>
+        <value>
+          <!-- Set your desired east X offset here -->
+          <beardOffsetXEast>0</beardOffsetXEast>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

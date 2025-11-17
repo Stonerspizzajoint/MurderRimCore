@@ -1,0 +1,36 @@
+<Defs>
+  <HediffDef>
+    <defName>MRC_FusedNewbornMarkerHediff</defName>
+    <label>fused newborn marker</label>
+    <description>Internal marker for a fused newborn android during its protected early stage.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <scenarioCanAdd>false</scenarioCanAdd>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <label>fused newborn</label>
+        <minSeverity>0</minSeverity>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+    <comps>
+      <li Class="MurderRimCore.AndroidRepro.HediffCompProperties_SimpleBabyHead">
+        <headTexPath>Pawn/BabyDrone/DroneBaby</headTexPath>
+        <transparentBodyTexPath>Pawn/BabyDrone/Body/DroneBabyBody</transparentBodyTexPath>
+        <offsetZ>-0.11</offsetZ>
+        <headLayerOffsetY>0</headLayerOffsetY>
+        <headScale>1.35</headScale>
+        <!-- Eye settings -->
+        <eyeOffsetZ>0.1</eyeOffsetZ>
+        <eyeScale>1.46</eyeScale>
+        <eyeWestOffsetX>0.03</eyeWestOffsetX>
+        <eyeEastOffsetX>-0.03</eyeEastOffsetX>
+      </li>
+    </comps>
+    <tags>
+      <li>MRC_FusedNewbornMarker</li>
+    </tags>
+  </HediffDef>
+</Defs>

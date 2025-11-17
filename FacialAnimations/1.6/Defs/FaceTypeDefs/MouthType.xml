@@ -1,0 +1,117 @@
+<Defs>
+    <FacialAnimation.MouthTypeDef Name="WorkerDroneMouth" Abstract="True">
+        <enableUnisexTexPath>true</enableUnisexTexPath>
+        <colorMode>whiteColor</colorMode>
+        <targetGeneDefs>
+          <li>MRWD_DroneBody</li>
+        </targetGeneDefs>
+    </FacialAnimation.MouthTypeDef>
+
+    <FacialAnimation.MouthTypeDef Name="FangedDroneMouth" Abstract="True">
+        <enableUnisexTexPath>true</enableUnisexTexPath>
+        <colorMode>whiteColor</colorMode>
+        <targetGeneDefs>
+          <li>MD_Fangs</li>
+        </targetGeneDefs>
+    </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="WorkerDroneMouth">
+	  <defName>DroneMouthNormal</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Normal</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="WorkerDroneMouth">
+	  <defName>DroneMouthSubtleFrown</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/SubtleFrown</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="WorkerDroneMouth">
+	  <defName>DroneMouthSubtleSmile</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/SubtleSmile</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="WorkerDroneMouth">
+	  <defName>DroneMouth3Mouth</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/3mouth</texPath>
+	  <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+<!--Normal Variant mouth-->
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy_normal</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy2_normal</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs2</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthTeethy_normal</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs3</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+<!--Subtle Smile Variant mouth-->
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy_subtleSmile</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs_subtleSmile</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy2_subtleSmile</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs2_subtleSmile</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthTeethy_subtleSmile</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs3_subtleSmile</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+<!--Subtle Frown Variant mouth-->
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy_subtleFrown</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs_subtleFrown</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy2_subtleFrown</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs2_subtleFrown</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthTeethy_subtleFrown</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs3_subtleFrown</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+<!--3Mouth Variant mouth-->
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy_3Mouth</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs_3Mouth</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthToothy2_3Mouth</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs2_3Mouth</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+
+  <FacialAnimation.MouthTypeDef ParentName="FangedDroneMouth">
+	  <defName>FangedMouthTeethy_3Mouth</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Mouths/Fangs3_3Mouth</texPath>
+      <shader>Map/Transparent</shader>
+  </FacialAnimation.MouthTypeDef>
+</Defs>

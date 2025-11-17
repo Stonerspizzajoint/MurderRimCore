@@ -1,0 +1,8 @@
+<Patch>
+  <!-- Drone Body Eyes Removal -->
+  <Operation Class="PatchOperationRemove">
+    <xpath>
+      //VREAndroids.AndroidGeneDef[defName="MRWD_DroneBody"]/renderNodeProperties/li[@Class="VEF.Graphics.PawnRenderNodeProperties_Omni" and workerClass="PawnRenderNodeWorker_Eye"]
+    </xpath>
+  </Operation>
+</Patch>

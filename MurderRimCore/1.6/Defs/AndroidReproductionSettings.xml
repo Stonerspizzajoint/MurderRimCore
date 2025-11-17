@@ -1,0 +1,65 @@
+<Defs>
+  <!-- Simplified union-based inheritance:
+       - Keep all genes from both parents (endogenes/xenogenes) minus non-inheritable and duplicates.
+       - Do not drop for category conflicts at build-time; resolve add-time conflicts on newborn using inverse-complexity weighting.
+       - Set disableGeneCaps=true to avoid trimming. -->
+  <MurderRimCore.AndroidRepro.AndroidReproductionSettingsDef>
+    <defName>MRC_AndroidReproductionSettings</defName>
+    <label>android reproduction settings</label>
+
+    <enabled>true</enabled>
+
+    <!-- Parent eligibility / relationship -->
+    <requireLovePartners>false</requireLovePartners>
+    <allowCrossFaction>false</allowCrossFaction>
+    <allowMixedTypes>true</allowMixedTypes>
+    <onlyHumanlikeAndroids>true</onlyHumanlikeAndroids>
+    <requireAwakenedBoth>true</requireAwakenedBoth>
+    <fusionRequiresBothAwakened>true</fusionRequiresBothAwakened>
+
+    <!-- Work & gestation -->
+    <fusionWorkAmount>3000</fusionWorkAmount>
+    <fusionTickFactorPerStat>1</fusionTickFactorPerStat>
+    <gestationDays>5</gestationDays>
+    <stationGestationPowerUse>600</stationGestationPowerUse>
+
+    <!-- Inheritance -->
+    <inheritEndogenes>true</inheritEndogenes>
+    <inheritXenogenes>true</inheritXenogenes>
+
+    <!-- Caps -->
+    <maxEndogenes>
+      <min>6</min>
+      <max>10</max>
+    </maxEndogenes>
+    <maxXenogenes>
+      <min>3</min>
+      <max>6</max>
+    </maxXenogenes>
+    <disableGeneCaps>true</disableGeneCaps>
+
+    <!-- Inverse complexity weighting multipliers (tune if needed) -->
+    <parentAWeightScale>1</parentAWeightScale>
+    <parentBWeightScale>1</parentBWeightScale>
+
+    <!-- Never drop these even if caps re-enabled -->
+    <essentialGeneDefs>
+      <!-- <li>Gene_SampleEssential</li> -->
+    </essentialGeneDefs>
+
+    <!-- Non-inheritable filters (drop if listed here) -->
+    <nonInheritableGeneDefs>
+      <!-- <li>Gene_NonInheritableExample</li> -->
+    </nonInheritableGeneDefs>
+    <nonInheritableGeneTags />
+
+    <!-- Optional global exclusion tags (legacy; leave empty) -->
+    <excludedGeneTags />
+
+    <fusedXenotypeIconDef></fusedXenotypeIconDef>
+    <newbornPawnKindDef></newbornPawnKindDef>
+    <inheritFactionFromMother>true</inheritFactionFromMother>
+
+    <enforceDeterministicFusion>true</enforceDeterministicFusion>
+  </MurderRimCore.AndroidRepro.AndroidReproductionSettingsDef>
+</Defs>

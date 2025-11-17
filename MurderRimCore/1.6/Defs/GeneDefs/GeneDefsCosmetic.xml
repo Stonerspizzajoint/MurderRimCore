@@ -1,0 +1,175 @@
+<Defs>
+    <!--Cosmetics-->
+<!-- Eye Colors -->
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_BlueDisplay</defName>
+        <label>Blue Display</label>
+        <labelShortAdj>Blue</labelShortAdj>
+        <description>Drones with this Hardware gene have a blue display.</description>
+        <skinColorOverride>(0, 0, 255)</skinColorOverride>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>blue</symbol></li>
+                <li><symbol>ice</symbol></li>
+                <li><symbol>sky</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_GreenDisplay</defName>
+        <label>Green Display</label>
+        <labelShortAdj>Green</labelShortAdj>
+        <description>Drones with this Hardware gene have a green display.</description>
+        <skinColorOverride>(0, 255, 0)</skinColorOverride>
+        <displayOrderInCategory>2</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>green</symbol></li>
+                <li><symbol>lime</symbol></li>
+                <li><symbol>jade</symbol></li>
+                <li><symbol>leaf</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_RedDisplay</defName>
+        <label>Red Display</label>
+        <labelShortAdj>Red</labelShortAdj>
+        <description>Drones with this Hardware gene have a red display.</description>
+        <skinColorOverride>(255, 0, 0)</skinColorOverride>
+        <displayOrderInCategory>3</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>red</symbol></li>
+                <li><symbol>crimson</symbol></li>
+                <li><symbol>scarlet</symbol></li>
+                <li><symbol>ruby</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_YellowDisplay</defName>
+        <label>Yellow Display</label>
+        <labelShortAdj>Yellow</labelShortAdj>
+        <description>Drones with this Hardware gene have a yellow display.</description>
+        <skinColorOverride>(255, 255, 0)</skinColorOverride>
+        <displayOrderInCategory>4</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>yellow</symbol></li>
+                <li><symbol>gold</symbol></li>
+                <li><symbol>lemon</symbol></li>
+                <li><symbol>amber</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_OrangeDisplay</defName>
+        <label>Orange Display</label>
+        <labelShortAdj>Orange</labelShortAdj>
+        <description>Drones with this Hardware gene have an orange display.</description>
+        <skinColorOverride>(255, 119, 0)</skinColorOverride>
+        <displayOrderInCategory>5</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>orange</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_PurpleDisplay</defName>
+        <label>Purple Display</label>
+        <labelShortAdj>Purple</labelShortAdj>
+        <description>Drones with this Hardware gene have a purple display.</description>
+        <skinColorOverride>(153, 0, 255)</skinColorOverride>
+        <displayOrderInCategory>6</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>purple</symbol></li>
+                <li><symbol>violet</symbol></li>
+                <li><symbol>lavender</symbol></li>
+                <li><symbol>amethyst</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_PinkDisplay</defName>
+        <label>Pink Display</label>
+        <labelShortAdj>Pink</labelShortAdj>
+        <description>Drones with this Hardware gene have a pink display.</description>
+        <skinColorOverride>(255, 20, 147)</skinColorOverride>
+        <displayOrderInCategory>7</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>pink</symbol></li>
+                <li><symbol>rose</symbol></li>
+                <li><symbol>fuchsia</symbol></li>
+                <li><symbol>blush</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_CyanDisplay</defName>
+        <label>Cyan Display</label>
+        <labelShortAdj>Cyan</labelShortAdj>
+        <description>Drones with this Hardware gene have a cyan display.</description>
+        <skinColorOverride>(0, 255, 255)</skinColorOverride>
+        <displayOrderInCategory>8</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>cyan</symbol></li>
+                <li><symbol>aqua</symbol></li>
+                <li><symbol>turquoise</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_EyeColorBase">
+        <defName>MRC_WhiteDisplay</defName>
+        <label>White Display</label>
+        <labelShortAdj>White</labelShortAdj>
+        <description>Drones with this Hardware gene have a white display.</description>
+        <skinColorOverride>(255, 255, 255)</skinColorOverride>
+        <displayOrderInCategory>9</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>white</symbol></li>
+                <li><symbol>ivory</symbol></li>
+                <li><symbol>pearl</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </VREAndroids.AndroidGeneDef>
+<!-- Blood Type -->
+	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareBase">
+		<defName>MRC_OilBlood</defName>
+		<label>oil blood</label>
+		<displayCategory>WorkerDroneHardware</displayCategory>
+		<description>While still relying on neutroamine as their synthetic lifeblood, these androids are equipped with an advanced compression module that refines the fluid into a denser, more efficient form. The altered neutroamine takes on a darker, oil-like appearance. (This change is purely cosmetic, with no effect on function or performance.)</description>
+		<iconPath>UI/Icons/Genes/Gene_OilBlood</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<exclusionTags>
+			<li>AG_BloodType</li>
+			<li>BloodType</li>
+			<li>Blood</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+		    	<backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathXenogenes>
+		    	<backgroundPathEndogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathEndogenes>
+				<customBloodThingDef>MRC_FilthOil</customBloodThingDef>
+				<customBloodSmearThingDef>MRC_FilthOilSmear</customBloodSmearThingDef>
+				<customBloodIcon>UI/Icons/Medical/OilBlood_BleedingIcon</customBloodIcon>
+				<customBloodEffect>MRC_Damage_HitDrone</customBloodEffect>
+				<customWoundsFromFleshtype>MRC_DroneFlesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+	</VREAndroids.AndroidGeneDef>
+</Defs>

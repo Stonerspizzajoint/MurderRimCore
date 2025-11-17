@@ -1,0 +1,7 @@
+<loadFolders>
+  <v1.6>
+    <li>/</li>
+    <li IfModActive="Stonerspizzajoint.TheWorkerDrones,Stonerspizzajoint.AssemblyRequired,Stonerspizzajoint.TheAbsoluteSolver">MurderRimCore/1.6</li>
+    <li IfModActive="nals.facialanimation">FacialAnimations/1.6</li>
+  </v1.6>
+</loadFolders>

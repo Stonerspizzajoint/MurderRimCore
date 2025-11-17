@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>MurderRim Core</name>
+  <author>Stonerspizzajoint</author>
+  <modVersion>1.0</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modIconPath>UI/Icons/ModMeta/MurderRimCore</modIconPath>
+  <modDependencies>
+    <li>			
+        <packageId>Ludeon.RimWorld.Biotech</packageId>
+		<displayName>Biotech</displayName>
+    </li>
+    <li>
+      <packageId>vanillaracesexpanded.android</packageId>
+		  <displayName>Vanilla Races Expanded - Android</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2975771801</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+	<loadBefore>
+	</loadBefore>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Anomaly</li>
+    <li>oskarpotocki.vanillafactionsexpanded.core</li>
+    <li>vanillaracesexpanded.android</li>
+    <li>ceteam.combatextended</li>
+    <li>nals.facialanimation</li>
+	</loadAfter>
+  <packageId>Stonerspizzajoint.MurderRimCore</packageId>
+  <description>
+This Mod adds nothing in the game, but is required for the rest of my MurderRim mods to work properly.
+ 
+im still pretty new to modding, so If there are any issues or questions, feel free to let me know.
+Anyways, Thank you! :D
+
+Credit:
+Thanks to Liam Vickers and Glitch Productions for their design and concept.
+</description>
+</ModMetaData>

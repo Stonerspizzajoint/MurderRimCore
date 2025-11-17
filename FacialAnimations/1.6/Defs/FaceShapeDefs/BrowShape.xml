@@ -1,0 +1,11 @@
+<Defs>
+    <FacialAnimation.BrowShapeDef>
+        <defName>NoBrow</defName>
+        <altShapeDef>normal</altShapeDef>
+    </FacialAnimation.BrowShapeDef>
+
+    <FacialAnimation.BrowShapeDef>
+        <defName>dead</defName>
+        <altShapeDef>normal</altShapeDef>
+    </FacialAnimation.BrowShapeDef>
+</Defs>

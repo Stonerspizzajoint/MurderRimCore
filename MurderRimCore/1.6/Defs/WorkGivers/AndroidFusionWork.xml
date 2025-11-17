@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>MRC_AbortFusion</defName>
+    <label>abort android fusion</label>
+    <giverClass>MurderRimCore.AndroidRepro.WorkGiver_AbortFusion</giverClass>
+    <!-- Changed from Flick to Basic so any colonist typically picks it up -->
+    <workType>BasicWorker</workType>
+    <priorityInType>999</priorityInType>
+    <verb>abort</verb>
+    <gerund>aborting android fusion</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <emergency>false</emergency>
+  </WorkGiverDef>
+
+  <WorkGiverDef>
+    <defName>MRC_BuildAndroidBody</defName>
+    <label>assemble android body</label>
+    <giverClass>MurderRimCore.AndroidRepro.WorkGiver_BuildAndroidBody</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>950</priorityInType>
+    <verb>assemble</verb>
+    <gerund>assembling android body</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <scanThings>true</scanThings>
+    <scanCells>false</scanCells>
+    <emergency>false</emergency>
+  </WorkGiverDef>
+</Defs>

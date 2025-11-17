@@ -1,0 +1,22 @@
+<Defs>
+  <FacialAnimation.SkinTypeDef Name="WorkerDroneSkin" Abstract="True">
+    <enableUnisexTexPath>true</enableUnisexTexPath>
+    <targetGeneDefs>
+      <li>MRWD_DroneBody</li>
+      <li>MD_MurderDroneBody</li>
+    </targetGeneDefs>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef ParentName="WorkerDroneSkin">
+	  <defName>DisplaySkinNormal</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Skins/NoSkin</texPath>
+	  <shader>Map/CutoutSkin</shader>
+  </FacialAnimation.SkinTypeDef>
+
+  <FacialAnimation.SkinTypeDef ParentName="WorkerDroneSkin">
+	  <defName>DisplaySkinFreckled</defName>
+	  <texPath>OtherMods/FacialAnimations/WorkerDrone/Skins/Freckled</texPath>
+	  <shader>Map/TransparentPostLight</shader>
+      <probability>0.2</probability>
+  </FacialAnimation.SkinTypeDef>
+</Defs>

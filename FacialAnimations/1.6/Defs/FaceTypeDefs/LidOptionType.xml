@@ -1,0 +1,7 @@
+<Defs>
+    <FacialAnimation.LidOptionTypeDef Name="WorkerDroneLidOption" Abstract="True">
+        <targetGeneDefs>
+            <li>MRWD_DroneBody</li>
+        </targetGeneDefs>
+    </FacialAnimation.LidOptionTypeDef>
+</Defs>

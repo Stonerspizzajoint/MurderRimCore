@@ -1,0 +1,6 @@
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Assemblies\MurderRimCore.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Assemblies\MurderRimCore.pdb
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Source\MurderRimCore\obj\Debug\MurderRimCore.csproj.AssemblyReference.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Source\MurderRimCore\obj\Debug\MurderRimCore.csproj.CoreCompileInputs.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Source\MurderRimCore\obj\Debug\MurderRimCore.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimCore\1.6\Source\MurderRimCore\obj\Debug\MurderRimCore.pdb

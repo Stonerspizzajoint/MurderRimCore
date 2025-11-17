@@ -1,0 +1,13 @@
+<Defs>
+	<NeedDef>
+		<defName>MRC_SleepMode</defName>
+		<needClass>MurderRimCore.Need_SleepMode</needClass>
+		<label>robotic rest</label>
+        <description>Robotic rest represents an android's need for downtime to process accumulated data and perform maintenance routines. Like biological sleep, androids must regularly enter a rest state to maintain optimal function.</description>
+		<listPriority>700</listPriority>
+		<major>true</major>
+		<showForCaravanMembers>true</showForCaravanMembers>
+		<minIntelligence>Humanlike</minIntelligence>
+		<onlyIfCausedByGene>true</onlyIfCausedByGene>
+	</NeedDef>
+</Defs>

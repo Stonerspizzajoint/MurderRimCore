@@ -1,0 +1,46 @@
+<Defs>
+	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareNoVEF">
+		<defName>MRC_SleepMode</defName>
+		<label>Sleep Mode 2.0</label>
+    <description>This gene replaces the standard hard drive memory limitation with a sleep mode system.\n\nInstead of requiring periodic reformatting when memory is full, androids with this hardware experience a sleep need similar to biological pawns, allowing them to rest and refresh their internal memory. However, this makes them more susceptible to collapsing due to memory overflow if left unchecked.</description>
+		<iconPath>UI/Icons/Genes/Gene_SleepMode2.0</iconPath>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<biostatCpx>3</biostatCpx>
+    <exclusionTags>
+      <li>VREA_SleepMode</li>
+      <li>AndroidRAM</li>
+    </exclusionTags>
+		<enablesNeeds>
+      <li>MRC_SleepMode</li>
+    </enablesNeeds>
+    <disablesNeeds>
+      <li>VREA_MemorySpace</li>
+    </disablesNeeds>
+	</VREAndroids.AndroidGeneDef>
+
+  <VREAndroids.AndroidGeneDef ParentName="MRC_HardwareNoVEF">
+    <defName>MRC_SilhouettePerception</defName>
+    <label>silhouette perception</label>
+    <description>This neural processing module limits facial recognition, reducing biological entities to basic silhouettes with featureless appearances.\n\nOriginally implemented by JCJenson as a security measure to prevent worker drones from distinguishing between humans or forming attachments. This deliberate limitation maintains operational compliance while preventing social bonds that could compromise corporate control.</description>
+    <customEffectDescriptions>
+      <li>Nullified thoughts: Ugly, Pretty, Disfigured</li>
+      <li>Robotic and Android pawns are not affected.</li>
+    </customEffectDescriptions>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>1</biostatMet>
+    <iconPath>UI/Icons/Genes/Gene_SilhouettePerception</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+      <li Class="MurderRimCore.SilhouetteGeneExtension">
+        <silhouetteTargetThingDefNames>
+          <li>Human</li>
+        </silhouetteTargetThingDefNames>
+        <faceDependentThoughtDefNames>
+          <li>Ugly</li>
+          <li>Pretty</li>
+          <li>Disfigured</li>
+        </faceDependentThoughtDefNames>
+      </li>
+    </modExtensions>
+  </VREAndroids.AndroidGeneDef>
+</Defs>

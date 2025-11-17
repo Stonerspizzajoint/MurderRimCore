@@ -1,0 +1,23 @@
+<Defs>
+    <ThoughtDef>
+        <defName>MRC_NeedRoboticRest</defName>
+        <workerClass>MurderRimCore.ThoughtWorker_NeedRoboticRest</workerClass>
+        <stages>
+            <li>
+                <label>memory fragmentation</label>
+                <description>My memory systems are becoming fragmented and I feel sluggish.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>memory congestion</label>
+                <description>My memory buffers are filling up and I feel increasingly overwhelmed.</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+            <li>
+                <label>memory saturation</label>
+                <description>My memory storage is nearly full and I feel mentally exhausted and disoriented. Processing is becoming sluggish and I'm struggling to think clearly. If I don't rest soon, my systems will force an emergency shutdown to process accumulated data.</description>
+                <baseMoodEffect>-18</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

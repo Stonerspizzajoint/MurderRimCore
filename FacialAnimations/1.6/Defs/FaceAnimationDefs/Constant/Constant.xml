@@ -1,0 +1,12 @@
+<Defs>
+  <FacialAnimation.FaceAnimationDef ParentName="WorkerDroneAnimation">
+    <defName>normalDisplay</defName>
+    <animationFrames>
+      <li>
+        <duration>1</duration>
+        <eyeballShapeDef>normal</eyeballShapeDef>
+      </li>
+    </animationFrames>
+    <priority>0</priority>
+  </FacialAnimation.FaceAnimationDef>
+</Defs>
