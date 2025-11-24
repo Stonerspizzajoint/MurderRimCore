@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using Verse;
+using VREAndroids;
 
 namespace MurderRimCore
 {
@@ -11,9 +12,8 @@ namespace MurderRimCore
             try
             {
                 if (pawn.genes == null) return false;
-                // Use GetGene + Active for compatibility across versions/mods
                 var gene = pawn.genes.GetGene(MRWD.MRWD_DefOf.MRWD_DroneBody);
-                return gene != null && gene.Active;
+                return gene != null && gene.Active && Utils.IsAndroid(pawn);
             }
             catch
             {

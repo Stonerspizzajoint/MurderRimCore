@@ -36,46 +36,9 @@ namespace MurderRimCore.AndroidRepro
                                            proc.Stage == FusionStage.Gestation ||
                                            proc.Stage == FusionStage.Assembly);
 
-            // Status line (cheap operations only)
-            if (!hasProc || proc.Stage == FusionStage.Idle)
-            {
-                list.Add(new FloatMenuOption("Status: Idle", null));
-            }
-            else
-            {
-                switch (proc.Stage)
-                {
-                    case FusionStage.Fusion:
-                        list.Add(new FloatMenuOption($"Status: Fusion {proc.FusionPercent.ToStringPercent()} (Hooked Up: {(proc.ParentsInSlots ? "yes" : "no")})", null));
-                        break;
-                    case FusionStage.Gestation:
-                        list.Add(new FloatMenuOption($"Status: Gestation {proc.GestationPercent.ToStringPercent()}", null));
-                        break;
-                    case FusionStage.Assembly:
-                        // Display counts strictly inside the station's footprint (3x3)
-                        int p = AndroidFusionRuntime.CountInFootprint(__instance, ThingDefOf.Plasteel);
-                        int u = AndroidFusionRuntime.CountInFootprintFlexible(__instance, AndroidFusionRuntime.UraniumDefNames);
-                        int a = AndroidFusionRuntime.CountInFootprintFlexible(__instance, AndroidFusionRuntime.AdvancedComponentDefNames);
-                        list.Add(new FloatMenuOption(
-                            $"Status: Assembly (Plasteel {p}/{AndroidFusionRuntime.PlasteelReq}, Uranium {u}/{AndroidFusionRuntime.UraniumReq}, Adv. Comp. {a}/{AndroidFusionRuntime.AdvCompReq})",
-                            null));
-                        break;
-                    case FusionStage.Complete:
-                        list.Add(new FloatMenuOption("Status: Complete", null));
-                        break;
-                    case FusionStage.Aborted:
-                        list.Add(new FloatMenuOption("Status: Aborted", null));
-                        break;
-                }
-            }
-
-            // If disabled in settings, only allow opening the dialog
+            // If disabled in settings, do not show any fusion-related options or dialog
             if (s == null || !s.enabled)
             {
-                list.Add(new FloatMenuOption("[Repro disabled] Open fusion dialog…", () =>
-                {
-                    Find.WindowStack.Add(new Dialog_FuseAndroidParents(__instance, selPawn));
-                }));
                 __result = list;
                 return;
             }
@@ -110,6 +73,7 @@ namespace MurderRimCore.AndroidRepro
                     Find.WindowStack.Add(new Dialog_FuseAndroidParents(__instance, selPawn));
                 }));
             }
+
             else
             {
                 if (proc.Stage == FusionStage.Gestation)

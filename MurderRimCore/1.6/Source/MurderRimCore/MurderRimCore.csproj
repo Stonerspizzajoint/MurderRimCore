@@ -70,7 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HarmonyPatcher.cs" />
-    <Compile Include="MRC\AndroidRepro\Comps\Hediff\HediffCompProperties_SimpleBabyHead.cs" />
+    <Compile Include="MRC\AndroidRepro\Comps\Hediff\HediffCompProperties_AndroidLifeStageGraphics.cs" />
     <Compile Include="MRC\AndroidRepro\DefOfs\Thing_DoTickPatch.cs" />
     <Compile Include="MRC\AndroidRepro\DefOfs\MRC_AndroidRepro_DefOf.cs" />
     <Compile Include="MRC\AndroidRepro\Defs\AndroidReproductionSettingsDef.cs" />
@@ -85,19 +85,21 @@
     <Compile Include="MRC\AndroidRepro\Patches\AndroidCreationStation\Station_FloatMenuPatch.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\BabyAndroidGraphics\BabyGraphicPatches.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\LifeIndex\MRC_MimicVRE_AndroidLifeStagePolicy.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\LifeIndex\MRC_UnpatchVREAdultForce_Auto.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\NeedsTracker\EnsureNeeds_AfterAddOrRemove.cs" />
+    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\PawnRelationWorker_Parent_SyntheticFactoryPatch.cs" />
+    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\PawnRelationWorker_BaseGenerationChanceFactor_WorkerDronesPatch.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\SameGenderParentSupport_ChildWorker.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\SameGenderParentSupport_ParentWorker.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\PostSpawn\FusedNewborn_PostSpawnPatch.cs" />
     <Compile Include="MRC\AndroidRepro\Patches\UI\HideTabsForAndroidBabies.cs" />
+    <Compile Include="MRC\AndroidRepro\Patches\Unpatch\MRC_UnpatchVREAdultForce_Auto.cs" />
+    <Compile Include="MRC\AndroidRepro\Patches\Unpatch\UnpatchVREAndroidFamily.cs" />
     <Compile Include="MRC\AndroidRepro\Runtime\AndroidFusionRuntime.cs" />
     <Compile Include="MRC\AndroidRepro\Runtime\AndroidFusionSpawnHelper.cs" />
     <Compile Include="MRC\AndroidRepro\Runtime\FusionProcess.cs" />
     <Compile Include="MRC\AndroidRepro\UI\Commands\Command_Action_Fusion.cs" />
     <Compile Include="MRC\AndroidRepro\UI\Dialog_FuseAndroidParents.cs" />
     <Compile Include="MRC\AndroidRepro\Utils\AndroidFusionUtility.cs" />
-    <Compile Include="MRC\AndroidRepro\Utils\NeedEnsureUtil.cs" />
+    <Compile Include="MRC\AndroidRepro\Utils\AndroidGrowthUtil.cs" />
     <Compile Include="MRC\AndroidRepro\Utils\FusedNewbornMarkerUtil.cs" />
     <Compile Include="MRC\AndroidRepro\Utils\FusionSlotUtility.cs" />
     <Compile Include="MRC\Comps\Game\observationalLearning\MurderRimCore_ObservationEffecterManager.cs" />
@@ -108,7 +110,9 @@
     <Compile Include="MRC\Comps\Need\Need_SleepMode.cs" />
     <Compile Include="MRC\DefOfs\MRC_DefOf.cs" />
     <Compile Include="MRC\Defs\AndroidGeneCategoryDef.cs" />
-    <Compile Include="MRC\Mod\MRC_Mod.cs" />
+    <Compile Include="MRC\Mod\MurderRimCoreMod.cs" />
+    <Compile Include="MRC\Mod\Settings\WorkerDroneBackstorySettings.cs" />
+    <Compile Include="MRC\Mod\Settings\WorkerDroneSpawnModSettings.cs" />
     <Compile Include="MRC\Patches\Drivers\Job\MurderRimCore_Toils_LayDown_LayDown_Patch.cs" />
     <Compile Include="MRC\Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_GetPriority_Patch.cs" />
     <Compile Include="MRC\Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_TryGiveJob_Patch.cs" />
@@ -120,16 +124,14 @@
     <Compile Include="MRC\Patches\OtherMods\VEF\VEF_Pawn_HealthTracker_DropBloodSmear_Patch\MurderRimCore_TryChangeBloodSmear_Patch.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\GeneWindow\MurderRimCore_VREAndroids_ExclusionTagsHighlight_Patch.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\GeneUtility\GenesInOrder\MurderRimCore_GeneUtility_GenesInOrder.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\PawnBioAndNameGenerator\GiveShuffledBioTo\PawnBioAndNameGenerator_GiveShuffledBioTo_MRC.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\AddGene\MurderRimCore_Pawn_GeneTracker_AddGene.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\RemoveGene\MurderRimCore_Pawn_GeneTracker_RemoveGene.cs" />
+    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\Utils_TryAssignBackstory_WorkerDrones.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\get_AndroidGenesGenesInOrder\MurderRimCore_Utils_StaticConstructor.cs" />
     <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\IsAndroidGene\MurderRimCore_IsAndroidGene.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\HarmonyInit_BackstoryCommonality.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\HarmonyInit_TraitRestrictions.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\HarmonyInit_TryGenerateNewPawnInternal_Postfix.cs" />
+    <Compile Include="MRC\Patches\PawnGenerator\WorkerDrone_SpawnVisualsPatch.cs" />
+    <Compile Include="MRC\Patches\PawnGenerator\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs" />
     <Compile Include="MRC\Patches\PawnGenerator\MurderRimCore_Pawn_GeneSkinColorPatch.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\MurderRimCore_Pawn_HardhatApparelPatch.cs" />
     <Compile Include="MRC\Patches\RestUtility\CanFallAsleep\MurderRimCore_RestUtility_CanFallAsleep_Patch.cs" />
     <Compile Include="MRC\Patches\RestUtility\ShouldWakeUp\MurderRimCore_RestUtility_ShouldWakeUp_Patch.cs" />
     <Compile Include="MRC\Patches\RestUtility\TimetablePreventsLayDown\MurderRimCore_RestUtility_TimetablePreventsLayDown_Patch.cs" />
@@ -143,24 +145,20 @@
     <Compile Include="MRC\Utils\Gene\ObservationLearningUtil.cs" />
     <Compile Include="MRC\Utils\Gene\SilhouetteUtil.cs" />
     <Compile Include="MRC\Utils\Gene\SkinColorUtils.cs" />
-    <Compile Include="MRC\Utils\Helpers\BackstoryCategoryResolver.cs" />
-    <Compile Include="MRC\Utils\Helpers\WorkerDroneHairFilterInit.cs" />
-    <Compile Include="MRC\Utils\Helpers\WorkerDroneBeardFilterInit.cs" />
+    <Compile Include="MRC\Utils\Misc\StringFloatMap.cs" />
+    <Compile Include="MRC\Utils\Misc\WorkerDroneBackstoryResolver.cs" />
     <Compile Include="MRC\Utils\Misc\DroneHelper.cs" />
-    <Compile Include="MRC\Utils\modExtensions\Backstory\BackstoryExtension.cs" />
     <Compile Include="MRC\Utils\modExtensions\ObservationLearningExtension.cs" />
     <Compile Include="MRC\Utils\modExtensions\RandomSkinColorsExtension.cs" />
     <Compile Include="MRC\Utils\modExtensions\SilhouetteGeneExtension.cs" />
-    <Compile Include="MRC\Utils\modExtensions\Traits\TraitExtension.cs" />
     <Compile Include="MRC\Workers\Thought\ThoughtWorker_NeedRoboticRest.cs" />
+    <Compile Include="MRWD\Defs\WorkerDroneSettingsDef.cs" />
     <Compile Include="MRWD\WorkerDroneDependency.cs" />
     <Compile Include="MRWD\Comps\Gene\Gene_DroneBody.cs" />
     <Compile Include="MRWD\Comps\Map\MapComponent_DoorMetrics.cs" />
     <Compile Include="MRWD\Comps\Need\Need_DoorSatisfaction.cs" />
     <Compile Include="MRWD\DefOfs\MRWD_DefOf.cs" />
-    <Compile Include="MRWD\Defs\WorkerDroneSettingsDef.cs" />
     <Compile Include="MRWD\Patches\Hediff\MurderRimCore_SkinColor_Patch.cs" />
-    <Compile Include="MRWD\Patches\OtherMods\VREAndroids\Utils\TryAssignBackstory\Utils_TryAssignBackstory_ColonyAwakeningEnforced.cs" />
     <Compile Include="MRWD\Patches\Thing\Destroy\HarmonyInit_DoorLossGrief.cs" />
     <Compile Include="MRWD\Workers\Thought\ThoughtWorker_DoorEnthusiastThought.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -169,8 +167,13 @@
     <Folder Include="MRAR\" />
     <Folder Include="MRAS\" />
     <Folder Include="MRC\Givers\" />
+    <Folder Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\PawnBioAndNameGenerator\GiveShuffledBioTo\" />
+    <Folder Include="MRC\Utils\Helpers\" />
+    <Folder Include="MRC\Utils\modExtensions\Backstory\" />
+    <Folder Include="MRC\Utils\modExtensions\Traits\" />
     <Folder Include="MRWD\Comps\Game\" />
     <Folder Include="MRWD\Givers\" />
+    <Folder Include="MRWD\Patches\OtherMods\VREAndroids\Utils\TryAssignBackstory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -11,7 +11,7 @@ namespace MurderRimCore.AndroidRepro
         {
             if (p == null || p.health == null) return;
 
-            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedNewbornMarkerHediff
+            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedGrowthMarker
                             ?? DefDatabase<HediffDef>.GetNamedSilentFail(MarkerDefName);
 
             if (def == null)
@@ -36,7 +36,7 @@ namespace MurderRimCore.AndroidRepro
         public static bool IsMarkedByHediff(Pawn p)
         {
             if (p == null || p.health == null || p.health.hediffSet == null) return false;
-            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedNewbornMarkerHediff
+            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedGrowthMarker
                             ?? DefDatabase<HediffDef>.GetNamedSilentFail(MarkerDefName);
             return def != null && p.health.hediffSet.HasHediff(def);
         }
@@ -44,7 +44,7 @@ namespace MurderRimCore.AndroidRepro
         public static void RemoveMarkerHediff(Pawn p)
         {
             if (p == null || p.health == null || p.health.hediffSet == null) return;
-            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedNewbornMarkerHediff
+            HediffDef def = MRC_AndroidRepro_DefOf.MRC_FusedGrowthMarker
                             ?? DefDatabase<HediffDef>.GetNamedSilentFail(MarkerDefName);
             if (def == null) return;
 

@@ -7,7 +7,7 @@
     <defName>MRC_AndroidReproductionSettings</defName>
     <label>android reproduction settings</label>
 
-    <enabled>true</enabled>
+    <enabled>false</enabled>
 
     <!-- Parent eligibility / relationship -->
     <requireLovePartners>false</requireLovePartners>
@@ -61,5 +61,18 @@
     <inheritFactionFromMother>true</inheritFactionFromMother>
 
     <enforceDeterministicFusion>true</enforceDeterministicFusion>
+    <relationSettings>
+      <!-- Relation Spawn Settings -->
+      <globalParentChance>0</globalParentChance>
+      <globalBloodRelationChance>0</globalBloodRelationChance>
+      <factionParentChance>
+        <MRWD_WorkerDroneFaction>0.5</MRWD_WorkerDroneFaction>                            <!-- more likely to have parents -->
+        <MRWD_WorkerDronePlayer>0</MRWD_WorkerDronePlayer>
+      </factionParentChance>
+      <factionBloodRelationChance>
+        <MRWD_WorkerDroneFaction>0.7</MRWD_WorkerDroneFaction>                            <!-- more family web -->
+        <MRWD_WorkerDronePlayer>0.3</MRWD_WorkerDronePlayer>
+      </factionBloodRelationChance>
+    </relationSettings>
   </MurderRimCore.AndroidRepro.AndroidReproductionSettingsDef>
 </Defs>

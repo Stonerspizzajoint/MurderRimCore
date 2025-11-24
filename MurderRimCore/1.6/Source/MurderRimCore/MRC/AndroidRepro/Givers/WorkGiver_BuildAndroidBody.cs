@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using RimWorld;
 using Verse;
 using Verse.AI;
-using System.Linq;
+using VREAndroids;
 
 namespace MurderRimCore.AndroidRepro
 {
@@ -10,11 +11,13 @@ namespace MurderRimCore.AndroidRepro
     {
         public override PathEndMode PathEndMode => PathEndMode.InteractionCell;
 
+        public override Danger MaxPathDanger(Pawn pawn) => Danger.Some;
+
         public override bool ShouldSkip(Pawn pawn, bool forced = false)
         {
             if (pawn.Map == null) return true;
 
-            // Skip if there are no assembly stations that are NOT queued for abort
+            // If there are no assembly-stage stations that are not abort-queued, skip.
             foreach (var st in AndroidFusionRuntime.StationsAwaitingAssembly(pawn.Map))
             {
                 if (st != null && !AndroidFusionRuntime.IsAbortQueued(st))
@@ -28,31 +31,40 @@ namespace MurderRimCore.AndroidRepro
             var map = pawn.Map;
             if (map == null) yield break;
 
-            // Only yield stations that are awaiting assembly and NOT queued for abort
             foreach (var st in AndroidFusionRuntime.StationsAwaitingAssembly(map))
+            {
                 if (st != null && !AndroidFusionRuntime.IsAbortQueued(st))
                     yield return st;
+            }
         }
 
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
             var station = t as VREAndroids.Building_AndroidCreationStation;
-            if (station == null || station.Destroyed) return false;
+            if (station == null || station.DestroyedOrNull()) return false;
 
-            // Do not offer assembly if abort is queued
+            // Only androids should assemble android bodies
+            if (!Utils.IsAndroid(pawn)) return false;
+
+            // Abort queued? The abort job should take over instead.
             if (AndroidFusionRuntime.IsAbortQueued(station)) return false;
 
-            // Must be in Assembly stage
+            // Must have a valid fusion process in Assembly stage
             if (!AndroidFusionRuntime.TryGetProcess(station, out var proc) ||
                 proc == null || proc.Stage != FusionStage.Assembly)
                 return false;
 
-            // Fast reach/reserve checks before the more expensive material scan
             if (t.IsForbidden(pawn)) return false;
-            if (!pawn.CanReserve(station, 1)) return false;
+
+            // Reserve station and interaction cell like WorkGiver_DoBill
+            if (!pawn.CanReserve(station, 1, -1, null, forced)) return false;
+            if (station.def.hasInteractionCell &&
+                !pawn.CanReserveSittableOrSpot(station.InteractionCell, station, forced))
+                return false;
+
             if (!pawn.CanReach(station.InteractionCell, PathEndMode.OnCell, Danger.Some)) return false;
 
-            // Only now do the map scans to confirm materials are reachable
+            // Expensive map scan last: verify enough reachable materials given what’s already inside
             if (!AndroidFusionRuntime.HasAllReachableAssemblyMaterials(pawn, station))
                 return false;
 
@@ -61,9 +73,10 @@ namespace MurderRimCore.AndroidRepro
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            var station = (VREAndroids.Building_AndroidCreationStation)t;
+            var station = t as VREAndroids.Building_AndroidCreationStation;
+            if (station == null) return null;
 
-            // Guard against race: if abort got queued after HasJobOnThing
+            // Guard race: abort queued after HasJobOnThing
             if (AndroidFusionRuntime.IsAbortQueued(station)) return null;
 
             Job job = JobMaker.MakeJob(MRC_AndroidRepro_DefOf.MRC_AssembleAndroidBody, station);
@@ -72,7 +85,7 @@ namespace MurderRimCore.AndroidRepro
             bool okU = QueueIngredientFlexible(pawn, job, AndroidFusionRuntime.UraniumDefNames, AndroidFusionRuntime.UraniumReq);
             bool okA = QueueIngredientFlexible(pawn, job, AndroidFusionRuntime.AdvancedComponentDefNames, AndroidFusionRuntime.AdvCompReq);
 
-            // Guard again after queue building (race window)
+            // Race guard again after queue building
             if (AndroidFusionRuntime.IsAbortQueued(station)) return null;
 
             if (!okP || !okU || !okA)

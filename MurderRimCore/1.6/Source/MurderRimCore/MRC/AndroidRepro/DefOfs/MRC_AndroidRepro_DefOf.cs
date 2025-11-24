@@ -7,11 +7,12 @@ namespace MurderRimCore.AndroidRepro
     public static class MRC_AndroidRepro_DefOf
     {
 
-        public static HediffDef MRC_FusedNewbornMarkerHediff;
+        public static GeneDef MRWD_DroneBody;
+        public static HediffDef MRC_FusedGrowthMarker;
         public static JobDef MRC_AbortFusion;
         public static JobDef MRC_AssembleAndroidBody;
-        public static HeadTypeDef MRC_BabyAndroid_Head;
-        public static RenderSkipFlagDef MRC_SkipBabyDrone;
+
+        public static LifeStageDef HumanlikeTeenager;
 
         static MRC_AndroidRepro_DefOf()
         {

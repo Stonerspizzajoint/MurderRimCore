@@ -11,7 +11,7 @@ namespace MurderRimCore.AndroidRepro
     {
         private const int WorkDurationTicks = 5000;
 
-        private VREAndroids.Building_AndroidCreationStation Station => TargetA.Thing as VREAndroids.Building_AndroidCreationStation;
+        private Building_AndroidCreationStation Station => TargetA.Thing as Building_AndroidCreationStation;
 
         // Remaining requirements tracked during the job
         private int remainingPlasteel;
@@ -22,7 +22,13 @@ namespace MurderRimCore.AndroidRepro
         {
             if (Station == null) return false;
 
+            // Reserve the station itself
             if (!pawn.Reserve(job.GetTarget(TargetIndex.A), job, 1, -1, null, errorOnFailed))
+                return false;
+
+            // Reserve interaction cell like vanilla DoBill
+            if (Station.def.hasInteractionCell &&
+                !pawn.ReserveSittableOrSpot(Station.InteractionCell, job, errorOnFailed))
                 return false;
 
             // If a queue exists (created by WorkGiver), reserve those stacks too (best effort)
@@ -40,17 +46,19 @@ namespace MurderRimCore.AndroidRepro
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
+            // End if station disappears or leaves Assembly stage
             AddEndCondition(() =>
             {
-                var thing = job.GetTarget(TargetIndex.A).Thing;
-                if (thing != null && thing.Spawned &&
-                    AndroidFusionRuntime.TryGetProcess(Station, out var proc) &&
-                    proc != null &&
-                    proc.Stage == FusionStage.Assembly)
-                {
-                    return JobCondition.Ongoing;
-                }
-                return JobCondition.Incompletable;
+                var st = Station;
+                if (st == null || !st.Spawned) return JobCondition.Incompletable;
+
+                if (!AndroidFusionRuntime.TryGetProcess(st, out var proc) || proc == null)
+                    return JobCondition.Incompletable;
+
+                if (proc.Stage != FusionStage.Assembly)
+                    return JobCondition.Incompletable;
+
+                return JobCondition.Ongoing;
             });
 
             this.FailOnBurningImmobile(TargetIndex.A);
@@ -125,7 +133,17 @@ namespace MurderRimCore.AndroidRepro
                 () => 1f - (float)workToil.actor.jobs.curDriver.ticksLeftThisToil / WorkDurationTicks);
             // Remove or change this effect if VREA_DefOf.ButcherMechanoid is not present in your loadout
             workToil.WithEffect(() => VREA_DefOf.ButcherMechanoid, TargetIndex.C);
-            workToil.FailOn(() => !RequirementsMet()); // if someone removes mats mid-work, abort
+            workToil.FailOn(() =>
+            {
+                // If station or process changes mid-work, abort
+                var st = Station;
+                if (st == null || st.Destroyed) return true;
+                if (!AndroidFusionRuntime.TryGetProcess(st, out var proc) || proc == null) return true;
+                if (proc.Stage != FusionStage.Assembly) return true;
+                // If someone removed mats mid-work, abort
+                if (!RequirementsMet()) return true;
+                return false;
+            });
             yield return workToil;
 
             // Finish
@@ -133,7 +151,14 @@ namespace MurderRimCore.AndroidRepro
             {
                 initAction = () =>
                 {
-                    if (!AndroidFusionRuntime.TryGetProcess(Station, out var proc) ||
+                    var st = Station;
+                    if (st == null || st.Destroyed)
+                    {
+                        EndJobWith(JobCondition.Incompletable);
+                        return;
+                    }
+
+                    if (!AndroidFusionRuntime.TryGetProcess(st, out var proc) ||
                         proc == null ||
                         proc.Stage != FusionStage.Assembly)
                     {
@@ -141,7 +166,7 @@ namespace MurderRimCore.AndroidRepro
                         return;
                     }
 
-                    if (!AndroidFusionRuntime.TryConsumeAssemblyMaterials(Station))
+                    if (!AndroidFusionRuntime.TryConsumeAssemblyMaterials(st))
                     {
                         Messages.Message("Assembly failed: materials changed or missing inside station.", MessageTypeDefOf.RejectInput);
                         EndJobWith(JobCondition.Incompletable);
@@ -157,6 +182,8 @@ namespace MurderRimCore.AndroidRepro
 
         private void InitRemainingRequirements()
         {
+            if (Station == null) return;
+
             remainingPlasteel = AndroidFusionRuntime.PlasteelReq - AndroidFusionRuntime.CountInFootprint(Station, ThingDefOf.Plasteel);
             remainingUranium = AndroidFusionRuntime.UraniumReq - AndroidFusionRuntime.CountInFootprintFlexible(Station, AndroidFusionRuntime.UraniumDefNames);
             remainingAdvComp = AndroidFusionRuntime.AdvCompReq - AndroidFusionRuntime.CountInFootprintFlexible(Station, AndroidFusionRuntime.AdvancedComponentDefNames);
@@ -164,6 +191,9 @@ namespace MurderRimCore.AndroidRepro
             if (remainingPlasteel < 0) remainingPlasteel = 0;
             if (remainingUranium < 0) remainingUranium = 0;
             if (remainingAdvComp < 0) remainingAdvComp = 0;
+
+            AndroidFusionRuntime.VerboseAssemblyLog.LogIfTrue(
+                $"[FusionAssembly] InitRemaining: P={remainingPlasteel}, U={remainingUranium}, A={remainingAdvComp}");
         }
 
         private bool RequirementsMet()
@@ -200,9 +230,9 @@ namespace MurderRimCore.AndroidRepro
 
                     int take = Math.Min(needForDef, stack.stackCount);
                     job.count = take;
-                }
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
             };
-            decideNeed.defaultCompleteMode = ToilCompleteMode.Instant;
             yield return decideNeed;
 
             var gotoIng = Toils_Goto.GotoThing(ingredientQueueInd, PathEndMode.Touch)
@@ -232,9 +262,9 @@ namespace MurderRimCore.AndroidRepro
                         EndJobWith(JobCondition.Incompletable);
                         return;
                     }
-                }
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
             };
-            drop.defaultCompleteMode = ToilCompleteMode.Instant;
             yield return drop;
 
             var adjustRemaining = new Toil
@@ -258,9 +288,9 @@ namespace MurderRimCore.AndroidRepro
 
                     if (!job.GetTargetQueue(ingredientQueueInd).NullOrEmpty())
                         JumpToToil(extract);
-                }
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
             };
-            adjustRemaining.defaultCompleteMode = ToilCompleteMode.Instant;
             yield return adjustRemaining;
         }
 
@@ -314,9 +344,9 @@ namespace MurderRimCore.AndroidRepro
 
                     // Reserve this stack
                     pawn.Reserve(next, job);
-                }
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
             };
-            findNext.defaultCompleteMode = ToilCompleteMode.Instant;
             yield return findNext;
 
             // Go to stack
@@ -361,9 +391,9 @@ namespace MurderRimCore.AndroidRepro
                         // Loop again for the same resource
                         JumpToToil(findNext);
                     }
-                }
+                },
+                defaultCompleteMode = ToilCompleteMode.Instant
             };
-            checkLoop.defaultCompleteMode = ToilCompleteMode.Instant;
             yield return checkLoop;
         }
 

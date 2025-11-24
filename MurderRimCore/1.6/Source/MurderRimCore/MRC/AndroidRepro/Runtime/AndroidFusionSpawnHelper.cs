@@ -97,12 +97,9 @@ namespace MurderRimCore.AndroidRepro
                 TryForceGraphicsRefresh(newborn);
             }
 
-            // Remove arms and legs, ensure no bleeding
-            TryRemoveArmsAndLegsNoBleed(newborn);
-
-            // RELATIONS (reversed test):
-            // - Remove Parent/Child from parent->child and child->Child if present
-            // - Add Parent on the child's tracker pointing to each parent
+            // RELATIONS:
+            // - Ensure newborn has Parent -> each parent
+            // - Ensure parents have Child -> newborn
             EnsureChildHoldsParentTo(newborn, proc.ParentA);
             if (proc.ParentB != null && proc.ParentB != proc.ParentA)
                 EnsureChildHoldsParentTo(newborn, proc.ParentB);
@@ -110,97 +107,41 @@ namespace MurderRimCore.AndroidRepro
             // Spawn
             GenSpawn.Spawn(newborn, cell, map);
 
-            // Apply the same correction once more post-spawn (covers other patches writing during spawn)
+            // Apply once more post-spawn (covers other patches writing during spawn)
             EnsureChildHoldsParentTo(newborn, proc.ParentA);
             if (proc.ParentB != null && proc.ParentB != proc.ParentA)
                 EnsureChildHoldsParentTo(newborn, proc.ParentB);
 
-            // Ensure android-baby needs
-            NeedEnsureUtil.EnsureAndroidBabyNeeds(newborn);
-
             return newborn;
         }
 
-        // Removes both arm and leg limb-cores as "old" missing parts so there is no bleeding.
-        private static void TryRemoveArmsAndLegsNoBleed(Pawn p)
-        {
-            if (p?.RaceProps?.body == null || p.health?.hediffSet == null) return;
-
-            // Tags are robust across humanlikes and most custom races
-            foreach (var part in p.RaceProps.body.AllParts)
-            {
-                var tags = part.def?.tags;
-                if (tags == null) continue;
-
-                bool isArmCore = tags.Contains(BodyPartTagDefOf.ManipulationLimbCore); // arms
-                bool isLegCore = tags.Contains(BodyPartTagDefOf.MovingLimbCore);       // legs
-                if (!isArmCore && !isLegCore) continue;
-
-                // Already missing? skip
-                if (p.health.hediffSet.PartIsMissing(part)) continue;
-
-                // Add MissingBodyPart as NOT fresh to prevent bleeding
-                try
-                {
-                    var missing = (Hediff_MissingPart)HediffMaker.MakeHediff(HediffDefOf.MissingBodyPart, p, part);
-                    // ensure non-bleeding
-                    missing.lastInjury = null;
-                    var isFreshField = typeof(Hediff_MissingPart).GetField("isFreshInt", BindingFlags.Instance | BindingFlags.NonPublic);
-                    isFreshField?.SetValue(missing, false);
-
-                    p.health.AddHediff(missing);
-                }
-                catch
-                {
-                    // fallback: ignore if something goes wrong for a custom body that doesn't allow missing here
-                }
-            }
-
-            // Refresh caches
-            try { p.health.hediffSet.DirtyCache(); } catch { }
-
-            // Safety: clear any accidental bleeding injuries if some mod interfered
-            try
-            {
-                var hediffs = p.health.hediffSet.hediffs;
-                for (int i = hediffs.Count - 1; i >= 0; i--)
-                {
-                    if (hediffs[i] is Hediff_Injury inj && inj.Bleeding)
-                    {
-                        // Remove or zero it out
-                        p.health.RemoveHediff(inj);
-                    }
-                }
-            }
-            catch { }
-        }
-
-        // "Other way around" test:
-        // - Ensure the CHILD holds a direct Parent relation to the PARENT.
-        // - Remove any direct Child relation on the child pointing at the parent.
-        // - Remove any direct Parent/Child relation on the parent pointing at the child.
+        /// <summary>
+        /// Ensure the CHILD has a direct Parent relation to PARENT.
+        /// We do NOT add or query the implied Child relation at all; RimWorld derives that.
+        /// Safe to call multiple times.
+        /// </summary>
         private static void EnsureChildHoldsParentTo(Pawn child, Pawn parent)
         {
             if (child == null || parent == null || child == parent) return;
-            if (child.relations == null || parent.relations == null) return;
+            if (child.relations == null) return;
 
             try
             {
-                // Clean parent-side direct links
-                if (parent.relations.DirectRelationExists(PawnRelationDefOf.Parent, child))
-                    parent.relations.RemoveDirectRelation(PawnRelationDefOf.Parent, child);
-                if (parent.relations.DirectRelationExists(PawnRelationDefOf.Child, child))
-                    parent.relations.RemoveDirectRelation(PawnRelationDefOf.Child, child);
-
-                // Clean child-side direct Child (we want child to store Parent, not Child)
-                if (child.relations.DirectRelationExists(PawnRelationDefOf.Child, parent))
-                    child.relations.RemoveDirectRelation(PawnRelationDefOf.Child, parent);
-
-                // Add/ensure: child has Parent -> parent
+                // Only ensure: child has Parent -> parent
                 if (!child.relations.DirectRelationExists(PawnRelationDefOf.Parent, parent))
+                {
                     child.relations.AddDirectRelation(PawnRelationDefOf.Parent, parent);
+                }
+
+                // Do NOT:
+                // - Add PawnRelationDefOf.Child anywhere
+                // - Query DirectRelationExists with Child
+                // Child is treated as an implied relation by the relation worker.
             }
-            catch { }
+            catch
+            {
+                // Better to silently skip than spam logs if some other mod does something cursed.
+            }
         }
 
         private static System.Collections.Generic.List<GeneDef> CollectParentOnly(Pawn p, AndroidReproductionSettingsDef s)

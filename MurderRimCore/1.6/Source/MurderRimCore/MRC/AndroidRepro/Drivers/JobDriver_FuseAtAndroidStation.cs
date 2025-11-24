@@ -8,13 +8,12 @@ namespace MurderRimCore.AndroidRepro
     public class JobDriver_FuseAtAndroidStation : JobDriver
     {
         private VREAndroids.Building_AndroidCreationStation Station
-        {
-            get { return (VREAndroids.Building_AndroidCreationStation)job.targetA.Thing; }
-        }
+            => (VREAndroids.Building_AndroidCreationStation)job.targetA.Thing;
 
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            // Reserve ONLY the slot cell (targetB). Do NOT reserve the station.
+            // DO NOT reserve the station (targetA); both parents must be able to use it.
+            // Only reserve this pawn's slot cell (targetB).
             return pawn.Reserve(job.targetB, job, 1, -1, null, errorOnFailed);
         }
 
@@ -23,17 +22,14 @@ namespace MurderRimCore.AndroidRepro
             this.FailOnDestroyedNullOrForbidden(TargetIndex.A);
             this.FailOn(() => Station == null);
 
-            // Reserve slot cell (explicit reserve toil for targetB only)
-            yield return Toils_Reserve.Reserve(TargetIndex.B);
-
-            // Go stand on the assigned slot
+            // Don't reserve again; TryMakePreToilReservations already handled B.
             yield return Toils_Goto.GotoCell(TargetIndex.B, PathEndMode.OnCell);
 
-            // Fusion work loop
             Toil fuse = new Toil
             {
                 defaultCompleteMode = ToilCompleteMode.Never
             };
+
             fuse.initAction = delegate
             {
                 FusionProcess proc;
@@ -42,6 +38,7 @@ namespace MurderRimCore.AndroidRepro
                     EndJobWith(JobCondition.Incompletable);
                 }
             };
+
             fuse.tickAction = delegate
             {
                 FusionProcess proc;
@@ -60,7 +57,6 @@ namespace MurderRimCore.AndroidRepro
                     return;
                 }
 
-                // Contribute only if both parents are exactly in their slots.
                 if (proc.ParentsInSlots)
                 {
                     float speed = pawn.GetStatValue(StatDefOf.WorkSpeedGlobal, true, -1);
@@ -69,6 +65,7 @@ namespace MurderRimCore.AndroidRepro
                     AndroidFusionRuntime.NotifyFusionWork(Station, pawn, delta);
                 }
             };
+
             yield return fuse;
         }
     }

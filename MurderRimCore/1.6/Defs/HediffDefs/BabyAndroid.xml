@@ -1,36 +1,105 @@
 <Defs>
   <HediffDef>
-    <defName>MRC_FusedNewbornMarkerHediff</defName>
-    <label>fused newborn marker</label>
-    <description>Internal marker for a fused newborn android during its protected early stage.</description>
+    <defName>MRC_FusedGrowthMarker</defName>
+    <label>android growth</label>
+    <description>The growth stage that this android is in.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <isBad>false</isBad>
     <tendable>false</tendable>
     <scenarioCanAdd>false</scenarioCanAdd>
-    <initialSeverity>1</initialSeverity>
+    <initialSeverity>0.1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
     <stages>
       <li>
-        <label>fused newborn</label>
+        <label>pill newborn</label>
         <minSeverity>0</minSeverity>
-        <becomeVisible>false</becomeVisible>
+        <enablesNeeds>
+          <li>MRC_SleepMode</li>
+          <li>VREA_ReactorPower</li>
+        </enablesNeeds>
+        <statFactors>
+          <VEF_BodySize_Multiplier>0.85</VEF_BodySize_Multiplier>
+		    </statFactors>
+      </li>
+      <li>
+        <label>teen frame</label>
+        <minSeverity>0.5</minSeverity>
       </li>
     </stages>
     <comps>
-      <li Class="MurderRimCore.AndroidRepro.HediffCompProperties_SimpleBabyHead">
-        <headTexPath>Pawn/BabyDrone/DroneBaby</headTexPath>
-        <transparentBodyTexPath>Pawn/BabyDrone/Body/DroneBabyBody</transparentBodyTexPath>
-        <offsetZ>-0.11</offsetZ>
-        <headLayerOffsetY>0</headLayerOffsetY>
-        <headScale>1.35</headScale>
-        <!-- Eye settings -->
-        <eyeOffsetZ>0.1</eyeOffsetZ>
-        <eyeScale>1.46</eyeScale>
-        <eyeWestOffsetX>0.03</eyeWestOffsetX>
-        <eyeEastOffsetX>-0.03</eyeEastOffsetX>
+      <li Class="MurderRimCore.AndroidRepro.HediffCompProperties_AndroidLifeStageGraphics">
+        <stages>
+          <li>
+            <stage>Newborn</stage>
+            <headTexPath>Pawn/BabyDrone/DroneBaby</headTexPath>
+            <transparentBodyTexPath>Pawn/BabyDrone/Body/DroneBabyBody</transparentBodyTexPath>
+            <useHediffEyeWhenNoGene>true</useHediffEyeWhenNoGene>
+            <offsetZ>-0.11</offsetZ>
+            <headLayerOffsetY>0</headLayerOffsetY>
+            <headScale>1.35</headScale>
+            <!-- Eye settings -->
+            <eyeOffsetZ>0.1</eyeOffsetZ>
+            <eyeScale>1.46</eyeScale>
+            <eyeWestOffsetX>0.03</eyeWestOffsetX>
+            <eyeEastOffsetX>-0.03</eyeEastOffsetX>
+          </li>
+          <li>
+            <stage>Teen</stage>
+            <!-- no head override: uses base headTexPath -->
+          </li>
+        </stages>
       </li>
     </comps>
-    <tags>
-      <li>MRC_FusedNewbornMarker</li>
-    </tags>
+    <renderNodeProperties>
+    	<!-- Eyes -->
+			<li Class="VEF.Graphics.PawnRenderNodeProperties_Omni">
+				<nodeClass>VEF.Graphics.PawnRenderNode_Omni</nodeClass>
+				<workerClass>PawnRenderNodeWorker_Eye</workerClass>
+				<debugLabel>MRC_BabyEyes</debugLabel>
+				<visibleFacing>
+					<li>South</li>
+					<li>East</li>
+					<li>West</li>
+				</visibleFacing>
+				<conditionalGraphics>
+					<alts>
+						<li>
+							<!-- Error Display when dead -->
+							<requirements>
+								<li>Dead</li>
+							</requirements>
+							<texPaths>
+								<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesError/DisplayError</li>
+								<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesError/DisplayFatalError/DisplayFatalError</li>
+							</texPaths>
+							<colorB>
+								<color>(255,0,0)</color>
+							</colorB>
+							<shader>TransparentPostLight</shader>
+						</li>
+					</alts>
+
+					<!-- Normal Display -->
+					<shader>TransparentPostLight</shader>
+					<colorA>
+            <color>(255,255,255)</color>
+					</colorA>
+					<texPaths>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesNormal/normal</li>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesWornOut/normal</li>
+						<li>Pawn/Humanoid/HeadAttachments/Display/DisplayEyesWornOutTired/normal</li>
+					</texPaths>
+				</conditionalGraphics>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+				<drawSize>1</drawSize>
+				<drawData>
+					<defaultData>
+						<layer>54</layer>
+						<offset>(0, 0, 0)</offset>
+					</defaultData>
+				</drawData>
+			</li>
+    </renderNodeProperties>
   </HediffDef>
 </Defs>

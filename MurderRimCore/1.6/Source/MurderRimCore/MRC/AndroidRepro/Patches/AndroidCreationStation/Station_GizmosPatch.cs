@@ -22,9 +22,9 @@ namespace MurderRimCore.AndroidRepro
             // Start/Configure fusion
             var startCmd = new Command_Action
             {
-                icon = ContentFinder<Texture2D>.Get("UI/Commands/DesirePower", false),
+                icon = ContentFinder<Texture2D>.Get("UI/Icons/Misc/AndroidFusion", false),
                 defaultLabel = "Android Fusion",
-                defaultDesc = (!settingsEnabled) ? "Reproduction disabled in settings."
+                defaultDesc = (!settingsEnabled) ? "Android reproduction, not yet fully implimented."
                              : (!powered) ? "Station is unpowered."
                              : (busy ? "In use already." : "Begin an android fusion by selecting two eligible parents.")
             };

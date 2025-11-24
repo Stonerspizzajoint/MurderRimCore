@@ -71,9 +71,6 @@ namespace MurderRimCore.AndroidRepro
                 if (nm.IndexOf(AndroidFusionUtility.NameSentinel, StringComparison.Ordinal) >= 0)
                     pawn.genes.xenotypeName = nm.Replace(AndroidFusionUtility.NameSentinel, string.Empty).Trim();
             }
-
-            // Ensure android-baby needs present
-            NeedEnsureUtil.EnsureAndroidBabyNeeds(pawn);
         }
     }
 }

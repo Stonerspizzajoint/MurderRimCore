@@ -10,21 +10,5 @@
                 <description>[PAWN_nameDef] was discarded improperly or not damaged enough to be fully decommissioned, resulting in a rare system malfunction that caused an unexpected reboot.\n\nThese units may exhibit unpredictable behavior and require careful monitoring. (Means nothing right now)</description>
             </li>
         </degreeDatas>
-        <modExtensions>
-            <li Class="MurderRimCore.TraitExtension">
-                <!-- Only allow this trait to exist if the pawn has one of these backstories -->
-                <restrictToBackstories>
-                    <li>MRWD_RebootedDrone05</li>
-                </restrictToBackstories>
-
-                <!-- Only valid for worker drones -->
-                <onlyForWorkerDrones>true</onlyForWorkerDrones>
-
-                <!-- Optional: auto-add if the pawn has a matching backstory -->
-                <alwaysAddIfBackstoryPresent>true</alwaysAddIfBackstoryPresent>
-                <!-- Optional: degree to add if auto-adding -->
-                <forcedDegree>0</forcedDegree>
-            </li>
-        </modExtensions>
     </TraitDef>
 </Defs>

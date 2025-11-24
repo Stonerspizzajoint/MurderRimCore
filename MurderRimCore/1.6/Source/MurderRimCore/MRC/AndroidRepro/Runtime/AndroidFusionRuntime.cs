@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using UnityEngine;
 using Verse;
 using Verse.AI;
 
@@ -135,6 +136,7 @@ namespace MurderRimCore.AndroidRepro
         {
             if (!processes.TryGetValue(station, out FusionProcess proc)) return;
             if (proc.Stage != FusionStage.Fusion) return;
+
             var s = AndroidReproductionSettingsDef.Current;
             if (s == null || !s.enabled) return;
             if (!StationPowered(station)) return;
@@ -143,6 +145,9 @@ namespace MurderRimCore.AndroidRepro
                 !(VREAndroids.Utils.IsAwakened(proc.ParentA) && VREAndroids.Utils.IsAwakened(proc.ParentB)))
                 return;
 
+            // Hearts during active fusion, same style as lovin.
+            TrySpawnFusionHearts(proc);
+
             proc.FusionProgress += deltaWork;
             if (proc.FusionProgress >= proc.FusionRequired)
             {
@@ -150,6 +155,40 @@ namespace MurderRimCore.AndroidRepro
                 proc.FusedProject = AndroidFusionUtility.BuildFusedProject(proc.ParentA, proc.ParentB, s);
                 proc.Stage = FusionStage.Gestation;
             }
+        }
+
+        private const int FusionHeartIntervalTicks = 100;
+        private const float FusionHeartScale = 0.42f; // same as JobDriver_Lovin
+
+        private static void TrySpawnFusionHearts(FusionProcess proc)
+        {
+            var map = proc?.Station?.Map;
+            if (map == null) return;
+
+            Pawn a = proc.ParentA;
+            Pawn b = proc.ParentB;
+            if (a == null || b == null) return;
+            if (!a.Spawned || !b.Spawned) return;
+
+            // Use the same interval logic as Lovin: once every 100 ticks per pawn.
+            int ticks = Find.TickManager.TicksGame;
+            if (ticks % FusionHeartIntervalTicks != 0)
+                return;
+
+            ThrowHeartMetaIcon(a);
+            ThrowHeartMetaIcon(b);
+        }
+
+        private static void ThrowHeartMetaIcon(Pawn pawn)
+        {
+            if (pawn == null || pawn.Map == null || !pawn.Spawned) return;
+
+            // Slight random horizontal offset so hearts don't perfectly stack.
+            IntVec3 cell = pawn.Position;
+            Map map = pawn.Map;
+
+            // This uses RimWorld's built-in meta icon logic (same as lovin).
+            FleckMaker.ThrowMetaIcon(cell, map, FleckDefOf.Heart, FusionHeartScale);
         }
 
         private static void GrantLovinThoughts(FusionProcess proc)
@@ -328,23 +367,95 @@ namespace MurderRimCore.AndroidRepro
             }
         }
 
+        /// <summary>
+        /// Returns true if, based on what is already inside the station footprint
+        /// and what is reachable on the map, this pawn could complete assembly.
+        /// Mirrors JobDriver_AssembleAndroidBody.InitRemainingRequirements + ValidStack.
+        /// </summary>
         public static bool HasAllReachableAssemblyMaterials(Pawn pawn, VREAndroids.Building_AndroidCreationStation station)
         {
-            if (pawn == null || station == null) return false;
+            if (pawn == null || station == null || pawn.Map == null) return false;
+            var map = pawn.Map;
 
-            int plasteel = CountReachableUnforbidden(pawn, ThingDefOf.Plasteel);
-            int uranium = 0;
-            int adv = 0;
+            // Start from what's already inside the station (same as InitRemainingRequirements)
+            int remPlasteel = PlasteelReq - CountInFootprint(station, ThingDefOf.Plasteel);
+            int remUranium = UraniumReq - CountInFootprintFlexible(station, UraniumDefNames);
+            int remAdvComp = AdvCompReq - CountInFootprintFlexible(station, AdvancedComponentDefNames);
 
-            foreach (var u in AllReachableOfAny(pawn, UraniumDefNames))
-                uranium += u.stackCount;
+            if (remPlasteel < 0) remPlasteel = 0;
+            if (remUranium < 0) remUranium = 0;
+            if (remAdvComp < 0) remAdvComp = 0;
 
-            foreach (var ac in AllReachableOfAny(pawn, AdvancedComponentDefNames))
-                adv += ac.stackCount;
+            // Already fully supplied
+            if (remPlasteel == 0 && remUranium == 0 && remAdvComp == 0)
+            {
+                LogAsm($"HasAllReachable: already fully supplied in footprint.");
+                return true;
+            }
 
-            LogAsm($"Reachable totals (pawn {pawn.LabelShort}): Plasteel={plasteel}, Uranium={uranium}, AdvComp={adv}");
+            bool ValidStack(Thing stack)
+            {
+                if (stack == null || stack.stackCount <= 0) return false;
+                if (stack.IsForbidden(pawn)) return false;
+                if (!pawn.CanReach(stack, PathEndMode.Touch, Danger.Some)) return false;
+                return true;
+            }
 
-            return plasteel >= PlasteelReq && uranium >= UraniumReq && adv >= AdvCompReq;
+            // Check Plasteel
+            if (remPlasteel > 0)
+            {
+                int avail = 0;
+                foreach (var stack in map.listerThings.ThingsOfDef(ThingDefOf.Plasteel))
+                {
+                    if (!ValidStack(stack)) continue;
+                    avail += stack.stackCount;
+                    if (avail >= remPlasteel) break;
+                }
+                if (avail < remPlasteel)
+                {
+                    LogAsm($"HasAllReachable: insufficient Plasteel (need {remPlasteel}, found {avail}).");
+                    return false;
+                }
+            }
+
+            // Check Uranium family
+            if (remUranium > 0)
+            {
+                int avail = 0;
+                foreach (var stack in map.listerThings.AllThings)
+                {
+                    if (!UraniumDefNames.Contains(stack.def.defName)) continue;
+                    if (!ValidStack(stack)) continue;
+                    avail += stack.stackCount;
+                    if (avail >= remUranium) break;
+                }
+                if (avail < remUranium)
+                {
+                    LogAsm($"HasAllReachable: insufficient Uranium (need {remUranium}, found {avail}).");
+                    return false;
+                }
+            }
+
+            // Check advanced components
+            if (remAdvComp > 0)
+            {
+                int avail = 0;
+                foreach (var stack in map.listerThings.AllThings)
+                {
+                    if (!AdvancedComponentDefNames.Contains(stack.def.defName)) continue;
+                    if (!ValidStack(stack)) continue;
+                    avail += stack.stackCount;
+                    if (avail >= remAdvComp) break;
+                }
+                if (avail < remAdvComp)
+                {
+                    LogAsm($"HasAllReachable: insufficient AdvComp (need {remAdvComp}, found {avail}).");
+                    return false;
+                }
+            }
+
+            LogAsm($"HasAllReachable: all requirements satisfiable for pawn {pawn.LabelShort}.");
+            return true;
         }
 
         // --------------- Station busy/abort helpers ---------------
@@ -405,11 +516,17 @@ namespace MurderRimCore.AndroidRepro
         public static void AssignFusionJob(Pawn pawn, VREAndroids.Building_AndroidCreationStation station, IntVec3 slot)
         {
             if (pawn == null || station == null) return;
-            if (!StationPowered(station)) { Messages.Message("Android Creation Station is unpowered.", MessageTypeDefOf.RejectInput); return; }
-            if (pawn.InMentalState) { Messages.Message(pawn.LabelShort + " is in a mental state.", MessageTypeDefOf.RejectInput); return; }
+            if (!StationPowered(station))
+            {
+                Messages.Message("Android Creation Station is unpowered.", MessageTypeDefOf.RejectInput);
+                return;
+            }
+            if (pawn.InMentalState)
+            {
+                Messages.Message(pawn.LabelShort + " is in a mental state.", MessageTypeDefOf.RejectInput);
+                return;
+            }
 
-            // Reserve the slot cell explicitly (physical interaction reservation is separate; use CanReserve/Reserve for cell)
-            pawn.Map.reservationManager.Reserve(pawn, JobMaker.MakeJob(JobDefOf.Wait), slot, 1, -1, null); // lightweight dummy reservation
             Job job = JobMaker.MakeJob(JobDefOf_Fusion.MRC_FuseAtCreationStation, station, slot);
             pawn.jobs.StartJob(job, JobCondition.InterruptForced);
         }
