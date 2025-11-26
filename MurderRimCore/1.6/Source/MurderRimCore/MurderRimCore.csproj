@@ -69,39 +69,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AndroidRepro\Comp&amp;Prop\ThingDef\CompProp\CompProperties_AndroidReproduction.cs" />
+    <Compile Include="AndroidRepro\Comp&amp;Prop\ThingDef\Comp\CompAndroidReproduction.cs" />
+    <Compile Include="AndroidRepro\DefOfs\AndroidRep_DefOf.cs" />
+    <Compile Include="AndroidRepro\Defs\AndroidReproductionSettingsDef.cs" />
+    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidAssembly.cs" />
+    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidAbortGestation.cs" />
+    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidNeuralUpload.cs" />
+    <Compile Include="AndroidRepro\Giver\Work\WorkGiver_AssembleAndroid.cs" />
+    <Compile Include="AndroidRepro\Patches\Patch_OverrideLifeStage.cs" />
+    <Compile Include="AndroidRepro\UI\Window_AndroidFusionSelection.cs" />
+    <Compile Include="AndroidRepro\Utils\AndroidReproUtils.cs" />
     <Compile Include="HarmonyPatcher.cs" />
-    <Compile Include="MRC\AndroidRepro\Comps\Hediff\HediffCompProperties_AndroidLifeStageGraphics.cs" />
-    <Compile Include="MRC\AndroidRepro\DefOfs\Thing_DoTickPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\DefOfs\MRC_AndroidRepro_DefOf.cs" />
-    <Compile Include="MRC\AndroidRepro\Defs\AndroidReproductionSettingsDef.cs" />
-    <Compile Include="MRC\AndroidRepro\Drivers\JobDriver_AssembleAndroidBody.cs" />
-    <Compile Include="MRC\AndroidRepro\Drivers\JobDriver_AbortFusion.cs" />
-    <Compile Include="MRC\AndroidRepro\Drivers\JobDriver_FuseAtAndroidStation.cs" />
-    <Compile Include="MRC\AndroidRepro\Givers\WorkGiver_BuildAndroidBody.cs" />
-    <Compile Include="MRC\AndroidRepro\Givers\WorkGiver_AbortFusion.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\AndroidCreationStation\Station_InspectPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\AndroidCreationStation\Thing_DoTickPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\AndroidCreationStation\Station_GizmosPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\AndroidCreationStation\Station_FloatMenuPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\BabyAndroidGraphics\BabyGraphicPatches.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\LifeIndex\MRC_MimicVRE_AndroidLifeStagePolicy.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\PawnRelationWorker_Parent_SyntheticFactoryPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\PawnRelationWorker_BaseGenerationChanceFactor_WorkerDronesPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\SameGenderParentSupport_ChildWorker.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\PawnRelationWorker\SameGenderParentSupport_ParentWorker.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\PostSpawn\FusedNewborn_PostSpawnPatch.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\UI\HideTabsForAndroidBabies.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\Unpatch\MRC_UnpatchVREAdultForce_Auto.cs" />
-    <Compile Include="MRC\AndroidRepro\Patches\Unpatch\UnpatchVREAndroidFamily.cs" />
-    <Compile Include="MRC\AndroidRepro\Runtime\AndroidFusionRuntime.cs" />
-    <Compile Include="MRC\AndroidRepro\Runtime\AndroidFusionSpawnHelper.cs" />
-    <Compile Include="MRC\AndroidRepro\Runtime\FusionProcess.cs" />
-    <Compile Include="MRC\AndroidRepro\UI\Commands\Command_Action_Fusion.cs" />
-    <Compile Include="MRC\AndroidRepro\UI\Dialog_FuseAndroidParents.cs" />
-    <Compile Include="MRC\AndroidRepro\Utils\AndroidFusionUtility.cs" />
-    <Compile Include="MRC\AndroidRepro\Utils\AndroidGrowthUtil.cs" />
-    <Compile Include="MRC\AndroidRepro\Utils\FusedNewbornMarkerUtil.cs" />
-    <Compile Include="MRC\AndroidRepro\Utils\FusionSlotUtility.cs" />
     <Compile Include="MRC\Comps\Game\observationalLearning\MurderRimCore_ObservationEffecterManager.cs" />
     <Compile Include="MRC\Comps\Game\observationalLearning\ObservationDistributorComponent.cs" />
     <Compile Include="MRC\Comps\Gene\Gene_ObservationLearning.cs" />
@@ -164,6 +143,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AndroidRepro\Comp&amp;Prop\Hediff\Comp\" />
+    <Folder Include="AndroidRepro\Comp&amp;Prop\Hediff\Props\" />
     <Folder Include="MRAR\" />
     <Folder Include="MRAS\" />
     <Folder Include="MRC\Givers\" />

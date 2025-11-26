@@ -1,7 +1,52 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\utils\\androidreproutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\utils\\androidreproutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\androidrepro\\defofs\\androidrep_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\defofs\\androidrep_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\androidrepro\\patches\\patch_overridelifestage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\patches\\patch_overridelifestage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\androidrepro\\driver\\job\\jobdriver_androidneuralupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\driver\\job\\jobdriver_androidneuralupload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\driver\\job\\jobdriver_androidabortgestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\driver\\job\\jobdriver_androidabortgestation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\androidrepro\\giver\\work\\workgiver_assembleandroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\giver\\work\\workgiver_assembleandroid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\comp\u0026prop\\thingdef\\comp\\compandroidreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\comp\u0026prop\\thingdef\\comp\\compandroidreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\androidrepro\\driver\\job\\jobdriver_androidassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\driver\\job\\jobdriver_androidassembly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\defs\\androidreproductionsettingsdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\defs\\androidreproductionsettingsdef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\comp\u0026prop\\thingdef\\compprop\\compproperties_androidreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\comp\u0026prop\\thingdef\\compprop\\compproperties_androidreproduction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\androidrepro\\ui\\window_androidfusionselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:androidrepro\\ui\\window_androidfusionselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +54,154 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patch_OverrideLifeStage.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Patches\\Patch_OverrideLifeStage.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Patches\\Patch_OverrideLifeStage.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Patches\\Patch_OverrideLifeStage.cs",
+              "RelativeToolTip": "AndroidRepro\\Patches\\Patch_OverrideLifeStage.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T09:12:26.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AndroidReproUtils.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Utils\\AndroidReproUtils.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Utils\\AndroidReproUtils.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Utils\\AndroidReproUtils.cs",
+              "RelativeToolTip": "AndroidRepro\\Utils\\AndroidReproUtils.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAowIYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:23:17.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AndroidRep_DefOf.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\DefOfs\\AndroidRep_DefOf.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\DefOfs\\AndroidRep_DefOf.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\DefOfs\\AndroidRep_DefOf.cs",
+              "RelativeToolTip": "AndroidRepro\\DefOfs\\AndroidRep_DefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T13:55:12.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JobDriver_AndroidNeuralUpload.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidNeuralUpload.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidNeuralUpload.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidNeuralUpload.cs",
+              "RelativeToolTip": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidNeuralUpload.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:05:58.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JobDriver_AndroidAbortGestation.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidAbortGestation.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidAbortGestation.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidAbortGestation.cs",
+              "RelativeToolTip": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidAbortGestation.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwDIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T23:30:30.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WorkGiver_AssembleAndroid.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Giver\\Work\\WorkGiver_AssembleAndroid.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Giver\\Work\\WorkGiver_AssembleAndroid.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Giver\\Work\\WorkGiver_AssembleAndroid.cs",
+              "RelativeToolTip": "AndroidRepro\\Giver\\Work\\WorkGiver_AssembleAndroid.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAF0AAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:55:51.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "JobDriver_AndroidAssembly.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidAssembly.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidAssembly.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Driver\\Job\\JobDriver_AndroidAssembly.cs",
+              "RelativeToolTip": "AndroidRepro\\Driver\\Job\\JobDriver_AndroidAssembly.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAIgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T10:55:09.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CompAndroidReproduction.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Comp\u0026Prop\\ThingDef\\Comp\\CompAndroidReproduction.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Comp\u0026Prop\\ThingDef\\Comp\\CompAndroidReproduction.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Comp\u0026Prop\\ThingDef\\Comp\\CompAndroidReproduction.cs",
+              "RelativeToolTip": "AndroidRepro\\Comp\u0026Prop\\ThingDef\\Comp\\CompAndroidReproduction.cs",
+              "ViewState": "AgIAAF0BAAAAAAAAAAAAAGsBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T09:55:48.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AndroidReproductionSettingsDef.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Defs\\AndroidReproductionSettingsDef.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Defs\\AndroidReproductionSettingsDef.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Defs\\AndroidReproductionSettingsDef.cs",
+              "RelativeToolTip": "AndroidRepro\\Defs\\AndroidReproductionSettingsDef.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAowBEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T10:10:32.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CompProperties_AndroidReproduction.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Comp\u0026Prop\\ThingDef\\CompProp\\CompProperties_AndroidReproduction.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\Comp\u0026Prop\\ThingDef\\CompProp\\CompProperties_AndroidReproduction.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\Comp\u0026Prop\\ThingDef\\CompProp\\CompProperties_AndroidReproduction.cs",
+              "RelativeToolTip": "AndroidRepro\\Comp\u0026Prop\\ThingDef\\CompProp\\CompProperties_AndroidReproduction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T09:55:18.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Window_AndroidFusionSelection.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\UI\\Window_AndroidFusionSelection.cs",
+              "RelativeDocumentMoniker": "AndroidRepro\\UI\\Window_AndroidFusionSelection.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\AndroidRepro\\UI\\Window_AndroidFusionSelection.cs",
+              "RelativeToolTip": "AndroidRepro\\UI\\Window_AndroidFusionSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-24T09:56:43.376Z",
+              "EditorCaption": ""
             }
           ]
         }

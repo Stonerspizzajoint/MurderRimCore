@@ -1,0 +1,15 @@
+<Defs>
+  <WorkGiverDef>
+    <defName>MRC_AssembleAndroid</defName>
+    <label>assemble android</label>
+    <giverClass>MurderRimCore.AndroidRepro.WorkGiver_AssembleAndroid</giverClass>
+    <workType>Crafting</workType> <!-- Uses Smithing/Crafting priority -->
+    <priorityInType>80</priorityInType>
+    <verb>assemble</verb>
+    <gerund>assembling</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

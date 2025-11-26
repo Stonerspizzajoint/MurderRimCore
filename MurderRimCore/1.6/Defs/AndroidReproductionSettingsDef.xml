@@ -1,0 +1,13 @@
+<Defs>
+  <MurderRimCore.AndroidRepro.AndroidReproductionSettingsDef>
+    <defName>MRC_AndroidReproConfig</defName>
+    <label>android reproduction config</label>
+    <enabled>true</enabled>
+    <gizmoIconPath>UI/Icons/Misc/AndroidFusion</gizmoIconPath>
+    <uiTitle>Android Fusion</uiTitle>
+    <requireAwakened>true</requireAwakened>
+    <minAge>16</minAge>
+    <requireLover>false</requireLover>
+    <requireLoverOnMap>true</requireLoverOnMap>
+  </MurderRimCore.AndroidRepro.AndroidReproductionSettingsDef>
+</Defs>

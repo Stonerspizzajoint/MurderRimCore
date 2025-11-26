@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>MRC_AndroidChildhoodMarker</defName>
+    <label>Artificial Growth</label>
+    <description>This is the measurement of this androids current artificial growth stage.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(0.6, 0.8, 1.0)</defaultLabelColor>
+    <isBad>false</isBad>
+    <initialSeverity>0.01</initialSeverity>
+    <maxSeverity>1.0</maxSeverity> <!-- The Cap -->
+    <stages>
+        <!-- 0% - 35%: Baby -->
+        <li>
+            <minSeverity>0.0</minSeverity>
+            <label>Pill Baby</label>
+        </li>
+        <!-- 35% - 70%: Child -->
+        <li>
+            <minSeverity>0.35</minSeverity>
+            <label>Child Frame</label>
+        </li>
+        <!-- 70% - 99%: Teen -->
+        <li>
+            <minSeverity>0.70</minSeverity>
+            <label>Teen Frame</label>
+        </li>
+    </stages>
+  </HediffDef>
+</Defs>

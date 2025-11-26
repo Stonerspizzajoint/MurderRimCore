@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- 1. THE NEWBORN (The Pill) -->
+  <BackstoryDef>
+    <defName>MRC_AndroidNewborn</defName>
+    <title>Baby Android</title>
+    <titleShort>newborn</titleShort>
+    <description>[PAWN_nameDef] is a newly fabricated, pill-shaped chassis without limbs. [PAWN_pronoun] is entirely dependent on android caretakers for guidance while [PAWN_possessive] core initializes.</description>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>MRC_AndroidBaby</li>
+    </spawnCategories>
+    <requiresSpawnCategory>true</requiresSpawnCategory>
+  </BackstoryDef>
+
+  <!-- 2. THE CHILD (The Micro-Frame) -->
+  <BackstoryDef>
+    <defName>MRC_AndroidChild</defName>
+    <title>Android Child</title>
+    <titleShort>prototype</titleShort>
+    <description>[PAWN_nameDef] has developed a unique personality kernel. Eager to learn, [PAWN_pronoun] mimics human behaviors and colony life with clumsy enthusiasm.</description>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>MRC_AndroidChild</li>
+    </spawnCategories>
+    <requiresSpawnCategory>true</requiresSpawnCategory>
+  </BackstoryDef>
+
+  <!-- 3. THE COLONY BORN (The Final Form) -->
+  <BackstoryDef>
+    <defName>MRC_AndroidColonyBorn</defName>
+    <title>Colony-born Android</title>
+    <titleShort>Android-Born</titleShort>
+    <description>[PAWN_nameDef] finished [PAWN_possessive] artificial growth cycle within this colony. [PAWN_possessive] fully compiled consciousness is a permanent reflection of the environment that raised [PAWN_objective].</description>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>MRC_AndroidColonyAdult</li>
+    </spawnCategories>
+    <requiresSpawnCategory>true</requiresSpawnCategory>
+  </BackstoryDef>
+</Defs>
