@@ -285,10 +285,10 @@ namespace MurderRimCore.AndroidRepro
 
         private void DrawTraitSelection(Rect rect)
         {
-            // Get valid traits for androids
+            // Get valid traits for androids - exclude traits that disable too many work types
             var validTraits = DefDatabase<TraitDef>.AllDefs
-                .Where(t => !t.disabledWorkTags.HasFlag(WorkTags.None) || t.disabledWorkTags == WorkTags.None)
                 .Where(t => t.commonality > 0)
+                .Where(t => t.degreeDatas != null && t.degreeDatas.Count > 0)
                 .OrderByDescending(t => t.commonality)
                 .Take(20) // Limit options
                 .ToList();
@@ -385,8 +385,10 @@ namespace MurderRimCore.AndroidRepro
             // Play success sound
             SoundDefOf.Quest_Succeded.PlayOneShotOnCamera();
 
+            // CurrentStageIndex now reflects the NEW stage after upgrade
             string stageName = _growthComp.CurrentStageIndex switch
             {
+                0 => "Baby", // Should not happen after upgrade
                 1 => "Child",
                 2 => "Teen",
                 3 => "Adult",

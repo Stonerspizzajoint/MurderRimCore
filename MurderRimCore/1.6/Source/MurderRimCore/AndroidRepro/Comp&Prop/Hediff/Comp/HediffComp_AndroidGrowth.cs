@@ -116,10 +116,8 @@ namespace MurderRimCore.AndroidRepro
         /// </summary>
         private void GraduateToAdult()
         {
-            // Set the adult backstory
-            AndroidReproUtils.ApplyStageBackstory(Pawn, 2);
-
-            // Remove the childhood marker hediff since they're now an adult
+            // Backstory is already set by PerformUpgrade via ApplyStageBackstory
+            // Just remove the childhood marker hediff since they're now an adult
             if (Pawn.health.hediffSet.HasHediff(parent.def))
             {
                 Pawn.health.RemoveHediff(parent);
