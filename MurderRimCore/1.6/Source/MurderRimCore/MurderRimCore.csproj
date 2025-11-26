@@ -69,17 +69,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AndroidRepro\Comp&amp;Prop\ThingDef\CompProp\CompProperties_AndroidReproduction.cs" />
-    <Compile Include="AndroidRepro\Comp&amp;Prop\ThingDef\Comp\CompAndroidReproduction.cs" />
-    <Compile Include="AndroidRepro\DefOfs\AndroidRep_DefOf.cs" />
-    <Compile Include="AndroidRepro\Defs\AndroidReproductionSettingsDef.cs" />
-    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidAssembly.cs" />
-    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidAbortGestation.cs" />
-    <Compile Include="AndroidRepro\Driver\Job\JobDriver_AndroidNeuralUpload.cs" />
-    <Compile Include="AndroidRepro\Giver\Work\WorkGiver_AssembleAndroid.cs" />
-    <Compile Include="AndroidRepro\Patches\Patch_OverrideLifeStage.cs" />
-    <Compile Include="AndroidRepro\UI\Window_AndroidFusionSelection.cs" />
-    <Compile Include="AndroidRepro\Utils\AndroidReproUtils.cs" />
     <Compile Include="HarmonyPatcher.cs" />
     <Compile Include="MRC\Comps\Game\observationalLearning\MurderRimCore_ObservationEffecterManager.cs" />
     <Compile Include="MRC\Comps\Game\observationalLearning\ObservationDistributorComponent.cs" />
@@ -143,8 +132,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AndroidRepro\Comp&amp;Prop\Hediff\Comp\" />
-    <Folder Include="AndroidRepro\Comp&amp;Prop\Hediff\Props\" />
     <Folder Include="MRAR\" />
     <Folder Include="MRAS\" />
     <Folder Include="MRC\Givers\" />
