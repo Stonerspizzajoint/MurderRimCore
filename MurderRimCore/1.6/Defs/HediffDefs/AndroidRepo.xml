@@ -3,12 +3,26 @@
   <HediffDef>
     <defName>MRC_AndroidChildhoodMarker</defName>
     <label>Artificial Growth</label>
-    <description>This is the measurement of this androids current artificial growth stage.</description>
+    <description>This is the measurement of this android's current artificial growth stage. When upgrade readiness reaches 100%, apply the "Upgrade Android Frame" medical bill to advance to the next stage and select skills, passions, and traits.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <defaultLabelColor>(0.6, 0.8, 1.0)</defaultLabelColor>
     <isBad>false</isBad>
     <initialSeverity>0.01</initialSeverity>
-    <maxSeverity>1.0</maxSeverity> <!-- The Cap -->
+    <maxSeverity>1.0</maxSeverity>
+    <comps>
+      <li Class="MurderRimCore.AndroidRepro.HediffCompProperties_AndroidGrowth">
+        <!-- Days of passive accumulation needed before eligible for upgrade -->
+        <daysPerStageThreshold>5</daysPerStageThreshold>
+        <!-- Severity thresholds for each life stage -->
+        <childThreshold>0.35</childThreshold>
+        <teenThreshold>0.70</teenThreshold>
+        <adultThreshold>1.0</adultThreshold>
+        <!-- Player selection options per upgrade -->
+        <skillPointsPerUpgrade>5</skillPointsPerUpgrade>
+        <passionsPerUpgrade>1</passionsPerUpgrade>
+        <traitsOnAdultUpgrade>1</traitsOnAdultUpgrade>
+      </li>
+    </comps>
     <stages>
         <!-- 0% - 35%: Baby -->
         <li>

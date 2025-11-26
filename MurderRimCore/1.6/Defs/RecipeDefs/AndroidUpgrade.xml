@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Medical bill for upgrading android frames -->
+  <RecipeDef>
+    <defName>MRC_UpgradeAndroidFrame</defName>
+    <label>upgrade android frame</label>
+    <description>Perform a system upgrade on a developing android, advancing them to their next growth stage. Allows selection of skills, passions, and (at adult stage) traits. Requires the android to have reached upgrade readiness.</description>
+    <workerClass>MurderRimCore.AndroidRepro.Recipe_AndroidFrameUpgrade</workerClass>
+    <jobString>Upgrading android frame.</jobString>
+    <workAmount>2500</workAmount>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <anesthetize>false</anesthetize>
+    <targetsBodyPart>false</targetsBodyPart>
+    <recipeUsers>
+      <!-- Applied to android pawns -->
+    </recipeUsers>
+    <!-- Ingredients required for the upgrade -->
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>
