@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Sustained loop while the beam is active (already present in your mod) -->
+  <SoundDef>
+    <defName>MRWD_RailgunBeam_Sustain</defName>
+    <context>MapOnly</context>
+    <sustain>true</sustain>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <sustainStopSound>MRWD_Railgun_PowerDown</sustainStopSound>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MRWD/Railgun/MRWD_Railgun_Beam/MRWD_Railgun_Beam</clipPath>
+          </li>
+        </grains>
+        <pitchRange>0.99~1.01</pitchRange>
+        <volumeRange>10</volumeRange>
+        <sustainRelease>0.02</sustainRelease>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MRWD_Railgun_Chargeup</defName>
+    <sustain>true</sustain>
+    <context>MapOnly</context>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <sustainStopSound>MRWD_Railgun_Shot</sustainStopSound>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MRWD/Railgun/MRWD_Railgun_Chargeup/MRWD_Railgun_Chargeup</clipPath>
+          </li>
+        </grains>
+        <pitchRange>1</pitchRange>
+        <volumeRange>10</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <!-- NEW: sustained loop while the weapon is cooling down -->
+  <SoundDef>
+    <defName>MRWD_RailgunCooldown_Sustain</defName>
+    <context>MapOnly</context>
+    <sustain>true</sustain>
+    <maxSimultaneous>2</maxSimultaneous>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>MRWD/Railgun/MRWD_Railgun_Cooldown/MRWD_Railgun_Cooldown</clipPath>
+          </li>
+        </grains>
+        <volumeRange>5</volumeRange>
+        <pitchRange>0.98~1.02</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>
