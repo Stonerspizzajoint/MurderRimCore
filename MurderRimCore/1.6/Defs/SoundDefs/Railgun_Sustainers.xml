@@ -2,18 +2,18 @@
 <Defs>
   <!-- Sustained loop while the beam is active (already present in your mod) -->
   <SoundDef>
-    <defName>MRWD_RailgunBeam_Sustain</defName>
+    <defName>MRC_RailgunBeam_Sustain</defName>
     <context>MapOnly</context>
     <sustain>true</sustain>
     <maxSimultaneous>2</maxSimultaneous>
     <priorityMode>PrioritizeNearest</priorityMode>
-    <sustainStopSound>MRWD_Railgun_PowerDown</sustainStopSound>
+    <sustainStopSound>MRC_Railgun_PowerDown</sustainStopSound>
     <subSounds>
       <li>
         <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>MRWD/Railgun/MRWD_Railgun_Beam/MRWD_Railgun_Beam</clipPath>
+            <clipPath>MRC/Railgun/MRC_Railgun_Beam/MRC_Railgun_Beam</clipPath>
           </li>
         </grains>
         <pitchRange>0.99~1.01</pitchRange>
@@ -24,18 +24,18 @@
   </SoundDef>
 
   <SoundDef>
-    <defName>MRWD_Railgun_Chargeup</defName>
+    <defName>MRC_Railgun_Chargeup</defName>
     <sustain>true</sustain>
     <context>MapOnly</context>
     <maxSimultaneous>2</maxSimultaneous>
     <priorityMode>PrioritizeNearest</priorityMode>
-    <sustainStopSound>MRWD_Railgun_Shot</sustainStopSound>
+    <sustainStopSound>MRC_Railgun_Shot</sustainStopSound>
     <subSounds>
       <li>
         <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>MRWD/Railgun/MRWD_Railgun_Chargeup/MRWD_Railgun_Chargeup</clipPath>
+            <clipPath>MRC/Railgun/MRC_Railgun_Chargeup/MRC_Railgun_Chargeup</clipPath>
           </li>
         </grains>
         <pitchRange>1</pitchRange>
@@ -46,7 +46,7 @@
 
   <!-- NEW: sustained loop while the weapon is cooling down -->
   <SoundDef>
-    <defName>MRWD_RailgunCooldown_Sustain</defName>
+    <defName>MRC_RailgunCooldown_Sustain</defName>
     <context>MapOnly</context>
     <sustain>true</sustain>
     <maxSimultaneous>2</maxSimultaneous>
@@ -56,7 +56,7 @@
         <tempoAffectedByGameSpeed>true</tempoAffectedByGameSpeed>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipPath>MRWD/Railgun/MRWD_Railgun_Cooldown/MRWD_Railgun_Cooldown</clipPath>
+            <clipPath>MRC/Railgun/MRC_Railgun_Cooldown/MRC_Railgun_Cooldown</clipPath>
           </li>
         </grains>
         <volumeRange>5</volumeRange>
