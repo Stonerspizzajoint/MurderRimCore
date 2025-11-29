@@ -86,6 +86,7 @@
     <Compile Include="FacialAnimationsPatches\Facetypepatches\Patch_PawnGeneTracker_RemoveGene_AnimationRebuild.cs" />
     <Compile Include="FacialAnimationsPatches\Facetypepatches\EyeballControllerComp_LoadTextures_Patch.cs" />
     <Compile Include="FacialAnimationsPatches\Facetypepatches\Patch_PawnGeneTracker_AddGene_AnimationRebuild.cs" />
+    <Compile Include="FacialAnimationsPatches\Spawnsetup\Patch_Pawn_SpawnSetup.cs" />
     <Compile Include="GeneForcedFacetypesExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

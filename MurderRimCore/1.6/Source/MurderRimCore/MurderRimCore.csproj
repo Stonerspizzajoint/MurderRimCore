@@ -39,6 +39,10 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="KCSG">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\KCSG.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -136,6 +140,7 @@
     <Folder Include="MRAS\" />
     <Folder Include="MRC\Givers\" />
     <Folder Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\PawnBioAndNameGenerator\GiveShuffledBioTo\" />
+    <Folder Include="MRC\ScenPart\" />
     <Folder Include="MRC\Utils\Helpers\" />
     <Folder Include="MRC\Utils\modExtensions\Backstory\" />
     <Folder Include="MRC\Utils\modExtensions\Traits\" />

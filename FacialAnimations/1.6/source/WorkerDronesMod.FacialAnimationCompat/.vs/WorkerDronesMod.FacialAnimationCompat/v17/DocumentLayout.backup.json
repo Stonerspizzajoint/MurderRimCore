@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\geneforcedfacetypesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:geneforcedfacetypesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\facialanimations\\1.6\\source\\workerdronesmod.facialanimationcompat\\facialanimationspatches\\spawnsetup\\patch_pawn_spawnsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationspatches\\spawnsetup\\patch_pawn_spawnsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\facialanimationgeneutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationgeneutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\geneforcedfacetypesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:geneforcedfacetypesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\facialanimationcompatinit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,15 +31,15 @@
       "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationspatches\\facetypepatches\\patch_pawngenetracker_addgene_animationrebuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\facialanimations\\1.6\\source\\workerdronesmod.facialanimationcompat\\facialanimationspatches\\facetypepatches\\mouthcontrollercomp_forcewhitepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\facialanimationspatches\\facetypepatches\\mouthcontrollercomp_forcewhitepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationspatches\\facetypepatches\\mouthcontrollercomp_forcewhitepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\facialanimations\\1.6\\source\\workerdronesmod.facialanimationcompat\\facialanimationspatches\\facetypepatches\\facialanimationbatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\facialanimationspatches\\facetypepatches\\facialanimationbatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationspatches\\facetypepatches\\facialanimationbatcher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\facialanimations\\1.6\\source\\workerdronesmod.facialanimationcompat\\facialanimationspatches\\facetypepatches\\eyeballcontrollercomp_loadtextures_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\facialanimationspatches\\facetypepatches\\eyeballcontrollercomp_loadtextures_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D484E78-31F3-4F15-AFD8-B18A4C308A58}|WorkerDronesMod.FacialAnimationCompat.csproj|solutionrelative:facialanimationspatches\\facetypepatches\\eyeballcontrollercomp_loadtextures_patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,7 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Patch_Pawn_SpawnSetup.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Spawnsetup\\Patch_Pawn_SpawnSetup.cs",
+              "RelativeDocumentMoniker": "FacialAnimationsPatches\\Spawnsetup\\Patch_Pawn_SpawnSetup.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Spawnsetup\\Patch_Pawn_SpawnSetup.cs",
+              "RelativeToolTip": "FacialAnimationsPatches\\Spawnsetup\\Patch_Pawn_SpawnSetup.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wB0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T12:00:56.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MouthControllerComp_ForceWhitePatch.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\MouthControllerComp_ForceWhitePatch.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\MouthControllerComp_ForceWhitePatch.cs",
@@ -66,12 +83,11 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\MouthControllerComp_ForceWhitePatch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T12:25:39.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T12:25:39.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FacialAnimationBatcher.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\FacialAnimationBatcher.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\FacialAnimationBatcher.cs",
@@ -79,12 +95,11 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\FacialAnimationBatcher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T12:25:35.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-01T12:25:35.983Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EyeballControllerComp_LoadTextures_Patch.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\EyeballControllerComp_LoadTextures_Patch.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\EyeballControllerComp_LoadTextures_Patch.cs",
@@ -92,12 +107,11 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\EyeballControllerComp_LoadTextures_Patch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T14:25:34.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T14:25:34.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Patch_PawnGeneTracker_AddGene_AnimationRebuild.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_AddGene_AnimationRebuild.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_AddGene_AnimationRebuild.cs",
@@ -105,8 +119,7 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_AddGene_AnimationRebuild.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T12:42:35.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T12:42:35.778Z"
             },
             {
               "$type": "Document",
@@ -116,14 +129,14 @@
               "RelativeDocumentMoniker": "FacialAnimationGeneUtil.cs",
               "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationGeneUtil.cs",
               "RelativeToolTip": "FacialAnimationGeneUtil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAgwDsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T14:07:29.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "GeneForcedFacetypesExtension.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\GeneForcedFacetypesExtension.cs",
               "RelativeDocumentMoniker": "GeneForcedFacetypesExtension.cs",
@@ -131,12 +144,11 @@
               "RelativeToolTip": "GeneForcedFacetypesExtension.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T06:49:11.27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T06:49:11.27Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Patch_TickManager_DoSingleTick_FacialAnimationBatch.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\Patch_TickManager_DoSingleTick_FacialAnimationBatch.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\Patch_TickManager_DoSingleTick_FacialAnimationBatch.cs",
@@ -144,12 +156,11 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\Patch_TickManager_DoSingleTick_FacialAnimationBatch.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T23:14:37.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T23:14:37.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Patch_PawnGeneTracker_RemoveGene_AnimationRebuild.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_RemoveGene_AnimationRebuild.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_RemoveGene_AnimationRebuild.cs",
@@ -157,12 +168,11 @@
               "RelativeToolTip": "FacialAnimationsPatches\\Facetypepatches\\Patch_PawnGeneTracker_RemoveGene_AnimationRebuild.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T12:35:09.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T12:35:09.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FacialAnimationCompatInit.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationCompatInit.cs",
               "RelativeDocumentMoniker": "FacialAnimationCompatInit.cs",
@@ -170,12 +180,11 @@
               "RelativeToolTip": "FacialAnimationCompatInit.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-06T23:14:52.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T23:14:52.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Patch_FAHelper_CreateAnimationDict_AddGeneTags.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\FacialAnimations\\1.6\\source\\WorkerDronesMod.FacialAnimationCompat\\FacialAnimationsPatches\\AnimationPatches\\Patch_FAHelper_CreateAnimationDict_AddGeneTags.cs",
               "RelativeDocumentMoniker": "FacialAnimationsPatches\\AnimationPatches\\Patch_FAHelper_CreateAnimationDict_AddGeneTags.cs",
@@ -183,8 +192,7 @@
               "RelativeToolTip": "FacialAnimationsPatches\\AnimationPatches\\Patch_FAHelper_CreateAnimationDict_AddGeneTags.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T15:05:00.569Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T15:05:00.569Z"
             }
           ]
         }

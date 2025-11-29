@@ -1,8 +1,0 @@
-<Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="VREA_AndroidCreationStation"]/comps</xpath>
-    <value>
-      <li Class="MurderRimCore.AndroidRepro.CompProperties_AndroidReproduction"/>
-    </value>
-  </Operation>
-</Patch>

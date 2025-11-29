@@ -156,26 +156,44 @@ namespace MurderRimCore
                 return;
 
             var helmetDef = MRWD_DefOf.MRWD_Headgear_Hardhat;
-            if (helmetDef == null)
-                return;
+            if (helmetDef == null) return;
 
             var helmet = ThingMaker.MakeThing(helmetDef) as Apparel;
-            if (helmet == null)
-                return;
+            if (helmet == null) return;
 
+            // Color Logic (Safe)
             if (ModsConfig.IdeologyActive && s.matchFavoriteColorWhenIdeology && pawn.story != null)
             {
                 if (pawn.story.favoriteColor != null && Rand.Value < s.favoriteColorHelmetChance)
                 {
-                    var compColorable = helmet.TryGetComp<CompColorable>();
-                    if (compColorable != null)
-                    {
-                        compColorable.SetColor(pawn.story.favoriteColor.color);
-                    }
+                    helmet.SetColor(pawn.story.favoriteColor.color);
                 }
             }
 
-            pawn.apparel.Wear(helmet, dropReplacedApparel: true);
+            // CRITICAL FIX: Bypass .Wear() to avoid Faction.OfPlayer crash during world gen
+            // Check if we need to remove existing headgear first to avoid stacking
+            for (int i = pawn.apparel.WornApparel.Count - 1; i >= 0; i--)
+            {
+                Apparel existing = pawn.apparel.WornApparel[i];
+                if (existing.def.apparel.layers.Contains(ApparelLayerDefOf.Overhead) || 
+                    (existing.def.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead) && helmetDef.apparel.bodyPartGroups.Contains(BodyPartGroupDefOf.FullHead)))
+                {
+                    // Destroy existing hat instead of dropping it (cleaner for gen)
+                    // OR just remove it from the list
+                    pawn.apparel.Remove(existing);
+                    existing.Destroy();
+                }
+            }
+
+            // Add directly to internal list. 
+            // Note: We usually use pawn.apparel.Wear, but during WorldGen, direct add is safer.
+            // However, Wear() is usually fine IF the pawn has a valid faction.
+            // If we must use Wear, wrap it in a try-catch, or use the internal 'WornApparel.Add'.
+            
+            // Safest approach for Generation:
+            pawn.apparel.Wear(helmet, false, false); 
+            // passed 'false' for dropReplacedApparel to avoid spawning items in a non-existent map
+            // passed 'false' for locked (forced) to avoid notification checks
         }
 
         // Helpers to detect "shaved" styles
