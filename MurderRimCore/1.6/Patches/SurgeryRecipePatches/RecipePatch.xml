@@ -1,0 +1,8 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="Human"]/recipes</xpath>
+    <value>
+      <li>MRC_ExtractNeutroamine</li>
+    </value>
+  </Operation>
+</Patch>

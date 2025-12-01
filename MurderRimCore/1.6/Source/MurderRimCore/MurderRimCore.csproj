@@ -113,6 +113,7 @@
     <Compile Include="MRC\Patches\Thoughts\Thought_MemorySocial\MurderRimCore_Thought_MemorySocial_OpinionOffset_Patch.cs" />
     <Compile Include="MRC\Patches\Thoughts\Thought_SituationalSocial\MurderRimCore_Thought_SituationalSocial_OpinionOffset_Patch.cs" />
     <Compile Include="MRC\Patches\UI\SkillUI\MurderRimCore_SkillUI_DrawSkill_ObservedHighlight_Patch.cs" />
+    <Compile Include="MRC\Recipe\Recipe_ExtractNeutroamine.cs" />
     <Compile Include="MRC\Utils\Gene\ObservationLearningUI.cs" />
     <Compile Include="MRC\Utils\Gene\ObservationLearningUtil.cs" />
     <Compile Include="MRC\Utils\Gene\SilhouetteUtil.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="MRC\Utils\Misc\DroneHelper.cs" />
     <Compile Include="MRC\Utils\modExtensions\ObservationLearningExtension.cs" />
     <Compile Include="MRC\Utils\modExtensions\RandomSkinColorsExtension.cs" />
+    <Compile Include="MRC\Utils\modExtensions\Recipe\NeutroamineExtractionExtension.cs" />
     <Compile Include="MRC\Utils\modExtensions\SilhouetteGeneExtension.cs" />
     <Compile Include="MRC\Workers\Thought\ThoughtWorker_NeedRoboticRest.cs" />
     <Compile Include="MRWD\Defs\WorkerDroneSettingsDef.cs" />
@@ -144,6 +146,7 @@
     <Folder Include="MRC\Utils\Helpers\" />
     <Folder Include="MRC\Utils\modExtensions\Backstory\" />
     <Folder Include="MRC\Utils\modExtensions\Traits\" />
+    <Folder Include="MRHP\" />
     <Folder Include="MRWD\Comps\Game\" />
     <Folder Include="MRWD\Givers\" />
     <Folder Include="MRWD\Patches\OtherMods\VREAndroids\Utils\TryAssignBackstory\" />

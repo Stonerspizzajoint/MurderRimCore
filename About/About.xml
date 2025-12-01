@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>MurderRim Core</name>
+  <shortName>MurderRim</shortName>
   <author>Stonerspizzajoint</author>
   <modVersion>1.0</modVersion>
   <supportedVersions>

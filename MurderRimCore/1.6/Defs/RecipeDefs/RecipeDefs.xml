@@ -1,0 +1,24 @@
+<Defs>
+  <RecipeDef>
+    <defName>MRC_ExtractNeutroamine</defName>
+    <label>extract neutroamine</label>
+    <description>Drain a significant amount of neutroamine (20) from this android.\n\nExtracting neutroamine takes more time than administering it due to needing to carefully access the android's internal systems.</description>
+    <workerClass>MurderRimCore.Recipe_ExtractNeutroamine</workerClass>
+	<soundWorking>Recipe_Machining</soundWorking>
+    <workSpeedStat>ButcheryMechanoidSpeed</workSpeedStat>
+    <jobString>Extracting neutroamine.</jobString>
+    <workAmount>4000</workAmount>
+    <isViolation>true</isViolation>
+    <anesthetize>false</anesthetize>
+    <targetsBodyPart>false</targetsBodyPart>
+    <uiIconThing>Neutroamine</uiIconThing>
+    <descriptionHyperlinks>
+      <ThingDef>Neutroamine</ThingDef>
+    </descriptionHyperlinks>
+    <modExtensions>
+        <li Class="MurderRimCore.NeutroamineExtractionExtension">
+            <amount>20</amount>
+        </li>
+    </modExtensions>
+  </RecipeDef>
+</Defs>
