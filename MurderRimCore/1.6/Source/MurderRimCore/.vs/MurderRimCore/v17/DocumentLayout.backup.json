@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\mrc\\recipe\\recipe_extractneutroamine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:mrc\\recipe\\recipe_extractneutroamine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\mrc\\utils\\modextensions\\recipe\\neutroamineextractionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:mrc\\utils\\modextensions\\recipe\\neutroamineextractionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\mrc\\patches\\pawngenerator\\workerdrone_spawnvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:mrc\\patches\\pawngenerator\\workerdrone_spawnvisualspatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\mrc\\patches\\pawngenerator\\pawngenerator_generateskills_workerdronesagepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:mrc\\patches\\pawngenerator\\pawngenerator_generateskills_workerdronesagepatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\mrc\\patches\\pawngenerator\\murderrimcore_pawn_geneskincolorpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:mrc\\patches\\pawngenerator\\murderrimcore_pawn_geneskincolorpatch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\comps\\need\\need_sleepmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:comps\\need\\need_sleepmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "NeutroamineExtractionExtension.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Utils\\modExtensions\\Recipe\\NeutroamineExtractionExtension.cs",
-              "RelativeDocumentMoniker": "MRC\\Utils\\modExtensions\\Recipe\\NeutroamineExtractionExtension.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Utils\\modExtensions\\Recipe\\NeutroamineExtractionExtension.cs",
-              "RelativeToolTip": "MRC\\Utils\\modExtensions\\Recipe\\NeutroamineExtractionExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T14:29:54.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Recipe_ExtractNeutroamine.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Recipe\\Recipe_ExtractNeutroamine.cs",
-              "RelativeDocumentMoniker": "MRC\\Recipe\\Recipe_ExtractNeutroamine.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Recipe\\Recipe_ExtractNeutroamine.cs",
-              "RelativeToolTip": "MRC\\Recipe\\Recipe_ExtractNeutroamine.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABgAAAA5AAAAAAAAAA==",
+              "Title": "Need_SleepMode.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Comps\\Need\\Need_SleepMode.cs",
+              "RelativeDocumentMoniker": "Comps\\Need\\Need_SleepMode.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Comps\\Need\\Need_SleepMode.cs",
+              "RelativeToolTip": "Comps\\Need\\Need_SleepMode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-30T13:55:13.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WorkerDrone_SpawnVisualsPatch.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\WorkerDrone_SpawnVisualsPatch.cs",
-              "RelativeDocumentMoniker": "MRC\\Patches\\PawnGenerator\\WorkerDrone_SpawnVisualsPatch.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\WorkerDrone_SpawnVisualsPatch.cs",
-              "RelativeToolTip": "MRC\\Patches\\PawnGenerator\\WorkerDrone_SpawnVisualsPatch.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAqwEYAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T13:37:59.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs",
-              "RelativeDocumentMoniker": "MRC\\Patches\\PawnGenerator\\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs",
-              "RelativeToolTip": "MRC\\Patches\\PawnGenerator\\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T13:37:58.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MurderRimCore_Pawn_GeneSkinColorPatch.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\MurderRimCore_Pawn_GeneSkinColorPatch.cs",
-              "RelativeDocumentMoniker": "MRC\\Patches\\PawnGenerator\\MurderRimCore_Pawn_GeneSkinColorPatch.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\MRC\\Patches\\PawnGenerator\\MurderRimCore_Pawn_GeneSkinColorPatch.cs",
-              "RelativeToolTip": "MRC\\Patches\\PawnGenerator\\MurderRimCore_Pawn_GeneSkinColorPatch.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-28T13:37:57.918Z",
+              "WhenOpened": "2025-12-15T22:09:12.963Z",
               "EditorCaption": ""
             }
           ]

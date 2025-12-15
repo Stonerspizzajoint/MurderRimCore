@@ -1,5 +1,37 @@
 <Defs>
-<!--Hardware baised genes-->
+<!-- Misc Gene Bases-->
+    <!--Hardware genes-->
+	<VREAndroids.AndroidGeneDef Name="MRC_MiscHardwareBase" Abstract="True">
+		<displayCategory>MiscHardware</displayCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_MiscHardwareBase" Name="MRC_MiscHardwareNoVEF" Abstract="True">
+	    <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathXenogenes>
+                <backgroundPathEndogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathEndogenes>
+            </li>
+        </modExtensions>
+    </VREAndroids.AndroidGeneDef>
+    
+    <!--Subroutine genes-->
+	<VREAndroids.AndroidGeneDef Name="MRC_MiscSubroutineBase" Abstract="True">
+		<displayCategory>MiscSubroutines</displayCategory>
+		<canGenerateInGeneSet>false</canGenerateInGeneSet>
+	</VREAndroids.AndroidGeneDef>
+
+    <VREAndroids.AndroidGeneDef ParentName="MRC_MiscSubroutineBase" Name="MRC_MiscSubroutineNoVEF" Abstract="True">
+	    <modExtensions>
+            <li Class="VEF.Genes.GeneExtension">
+                <backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Subroutine</backgroundPathXenogenes>
+                <backgroundPathEndogenes>UI/Icons/Genes/GeneBackground_Subroutine</backgroundPathEndogenes>
+            </li>
+        </modExtensions>
+    </VREAndroids.AndroidGeneDef>
+
+<!--Worker Drone Gene Bases-->
+    <!--Hardware genes-->
 	<VREAndroids.AndroidGeneDef Name="MRC_HardwareBase" Abstract="True">
 		<displayCategory>WorkerDroneHardware</displayCategory>
 		<canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -14,7 +46,7 @@
         </modExtensions>
     </VREAndroids.AndroidGeneDef>
 
-<!--Subroutine based genes-->
+    <!--Subroutine genes-->
 	<VREAndroids.AndroidGeneDef Name="MRC_SubroutineBase" Abstract="True">
 		<displayCategory>WorkerDroneSubroutines</displayCategory>
 		<canGenerateInGeneSet>false</canGenerateInGeneSet>
@@ -28,25 +60,4 @@
             </li>
         </modExtensions>
     </VREAndroids.AndroidGeneDef>
-    
-<!--Cosmetic based genes-->
-	<VREAndroids.AndroidGeneDef Name="MRC_CosmeticBase" Abstract="True">
-		<displayCategory>DroneCosmetics</displayCategory>
-		<canGenerateInGeneSet>false</canGenerateInGeneSet>
-	</VREAndroids.AndroidGeneDef>
-
-	<VREAndroids.AndroidGeneDef ParentName="MRC_CosmeticBase" Name="MRC_EyeColorBase" Abstract="True">
-        <prerequisite>MRWD_DroneBody</prerequisite>
-        <iconPath>UI/Icons/Genes/Gene_Display</iconPath>
-        <isCoreComponent>false</isCoreComponent>
-        <exclusionTags>
-            <li>EyeColor</li>
-        </exclusionTags>
-        <modExtensions>
-            <li Class="VEF.Genes.GeneExtension">
-                <backgroundPathXenogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathXenogenes>
-                <backgroundPathEndogenes>UI/Icons/Genes/GeneBackground_Hardware</backgroundPathEndogenes>
-            </li>
-        </modExtensions>
-	</VREAndroids.AndroidGeneDef>
 </Defs>

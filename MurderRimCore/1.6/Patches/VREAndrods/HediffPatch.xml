@@ -1,0 +1,41 @@
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+
+      <!-- Stage 2: Initial (Severity > 0.04) -->
+      <!-- We target the one that already has statOffsets -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="VREA_Overheating"]/stages/li[minSeverity="0.04"]/statOffsets</xpath>
+        <value>
+          <RestFallRateFactor>0.2</RestFallRateFactor> <!-- +20% Energy Drain -->
+        </value>
+      </li>
+
+      <!-- Stage 3: Minor (Severity > 0.2) -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="VREA_Overheating"]/stages/li[label="minor"]/statOffsets</xpath>
+        <value>
+          <RestFallRateFactor>1</RestFallRateFactor> <!-- +50% Energy Drain -->
+        </value>
+      </li>
+
+      <!-- Stage 4: Serious (Severity > 0.35) -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="VREA_Overheating"]/stages/li[label="serious"]/statOffsets</xpath>
+        <value>
+          <RestFallRateFactor>3</RestFallRateFactor> <!-- +100% Energy Drain (Double) -->
+        </value>
+      </li>
+
+      <!-- Stage 5: Extreme (Severity > 0.62) -->
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/HediffDef[defName="VREA_Overheating"]/stages/li[label="extreme"]/statOffsets</xpath>
+        <value>
+          <RestFallRateFactor>9</RestFallRateFactor> <!-- +200% Energy Drain (Triple) -->
+        </value>
+      </li>
+
+    </operations>
+  </Operation>
+</Patch>

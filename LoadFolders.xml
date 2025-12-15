@@ -1,7 +1,10 @@
 <loadFolders>
   <v1.6>
     <li>/</li>
-    <li IfModActive="Stonerspizzajoint.TheWorkerDrones,Stonerspizzajoint.AssemblyRequired,Stonerspizzajoint.TheAbsoluteSolver">MurderRimCore/1.6</li>
+    <li IfModActive="Stonerspizzajoint.TheWorkerDrones,Stonerspizzajoint.AssemblyRequired,Stonerspizzajoint.TheAbsoluteSolver,Stonerspizzajoint.HazardProtocol">MurderRimCore/1.6</li>
+    <li IfModActive="Stonerspizzajoint.TheWorkerDrones,Stonerspizzajoint.AssemblyRequired,Stonerspizzajoint.TheAbsoluteSolver">MurderRimCoreCosmetics/1.6</li>
+    <li IfModActive="Stonerspizzajoint.HazardProtocol">MurderRimHazardProtocol/1.6</li>
+    <li IfModActive="Stonerspizzajoint.TheWorkerDrones">MurderRimTheWorkerDrones/1.6</li>
     <li IfModActive="nals.facialanimation">FacialAnimations/1.6</li>
   </v1.6>
 </loadFolders>

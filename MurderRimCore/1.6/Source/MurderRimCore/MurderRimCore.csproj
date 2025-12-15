@@ -43,6 +43,10 @@
       <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\KCSG.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MRWD">
+      <HintPath>..\..\..\..\MurderRimTheWorkerDrones\1.6\Assemblies\MRWD.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,83 +77,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\Need\Need_SleepMode.cs" />
+    <Compile Include="DefOfs\MRC_DefOf.cs" />
+    <Compile Include="Defs\AndroidGeneCategoryDef.cs" />
     <Compile Include="HarmonyPatcher.cs" />
-    <Compile Include="MRC\Comps\Game\observationalLearning\MurderRimCore_ObservationEffecterManager.cs" />
-    <Compile Include="MRC\Comps\Game\observationalLearning\ObservationDistributorComponent.cs" />
-    <Compile Include="MRC\Comps\Gene\Gene_ObservationLearning.cs" />
-    <Compile Include="MRC\Comps\Map\observationalLearning\MapComponent_ObservationCache.cs" />
-    <Compile Include="MRC\Comps\Map\observationalLearning\ObservationXpBuffer.cs" />
-    <Compile Include="MRC\Comps\Need\Need_SleepMode.cs" />
-    <Compile Include="MRC\DefOfs\MRC_DefOf.cs" />
-    <Compile Include="MRC\Defs\AndroidGeneCategoryDef.cs" />
-    <Compile Include="MRC\Mod\MurderRimCoreMod.cs" />
-    <Compile Include="MRC\Mod\Settings\WorkerDroneBackstorySettings.cs" />
-    <Compile Include="MRC\Mod\Settings\WorkerDroneSpawnModSettings.cs" />
-    <Compile Include="MRC\Patches\Drivers\Job\MurderRimCore_Toils_LayDown_LayDown_Patch.cs" />
-    <Compile Include="MRC\Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_GetPriority_Patch.cs" />
-    <Compile Include="MRC\Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_TryGiveJob_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\ConditionalGraphicSet\GetState\MurderRimCore_ConditionalGraphicSet_GetState_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\FleshTypeDef\ChooseWoundOverlay\MurderRimCore_FleshTypeDef_ChooseWoundOverlay_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\VanillaExpandedFramework__DamageWorker_AddInjury_ApplyToPawn_Patch\GetEffecterDef\MurderRimCore_GetEffecterDef_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\VEF_HealthCardUtility_DrawHediffRow_Patch\HasBloodIconChangingGene\MurderRimCore_HasBloodIconChangingGene_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\VEF_Pawn_HealthTracker_DropBloodFilth_Patch\MurderRimCore_TryChangeBloodFilth_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VEF\VEF_Pawn_HealthTracker_DropBloodSmear_Patch\MurderRimCore_TryChangeBloodSmear_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\GeneWindow\MurderRimCore_VREAndroids_ExclusionTagsHighlight_Patch.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\GeneUtility\GenesInOrder\MurderRimCore_GeneUtility_GenesInOrder.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\AddGene\MurderRimCore_Pawn_GeneTracker_AddGene.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\RemoveGene\MurderRimCore_Pawn_GeneTracker_RemoveGene.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\Utils_TryAssignBackstory_WorkerDrones.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\get_AndroidGenesGenesInOrder\MurderRimCore_Utils_StaticConstructor.cs" />
-    <Compile Include="MRC\Patches\OtherMods\VREAndroids\Utils\IsAndroidGene\MurderRimCore_IsAndroidGene.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\WorkerDrone_SpawnVisualsPatch.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs" />
-    <Compile Include="MRC\Patches\PawnGenerator\MurderRimCore_Pawn_GeneSkinColorPatch.cs" />
-    <Compile Include="MRC\Patches\RestUtility\CanFallAsleep\MurderRimCore_RestUtility_CanFallAsleep_Patch.cs" />
-    <Compile Include="MRC\Patches\RestUtility\ShouldWakeUp\MurderRimCore_RestUtility_ShouldWakeUp_Patch.cs" />
-    <Compile Include="MRC\Patches\RestUtility\TimetablePreventsLayDown\MurderRimCore_RestUtility_TimetablePreventsLayDown_Patch.cs" />
-    <Compile Include="MRC\Patches\Thing\DeSpawn\Thing_DeSpawn_InvalidateObservationCache.cs" />
-    <Compile Include="MRC\Patches\Thing\pawn\Skill\SkillRecord\Learn\SkillRecord_Learn_ObservationBuffer.cs" />
-    <Compile Include="MRC\Patches\Thing\pawn\SpawnSetup\Pawn_SpawnSetup_InvalidateObservationCache.cs" />
-    <Compile Include="MRC\Patches\Thoughts\Thought_MemorySocial\MurderRimCore_Thought_MemorySocial_OpinionOffset_Patch.cs" />
-    <Compile Include="MRC\Patches\Thoughts\Thought_SituationalSocial\MurderRimCore_Thought_SituationalSocial_OpinionOffset_Patch.cs" />
-    <Compile Include="MRC\Patches\UI\SkillUI\MurderRimCore_SkillUI_DrawSkill_ObservedHighlight_Patch.cs" />
-    <Compile Include="MRC\Recipe\Recipe_ExtractNeutroamine.cs" />
-    <Compile Include="MRC\Utils\Gene\ObservationLearningUI.cs" />
-    <Compile Include="MRC\Utils\Gene\ObservationLearningUtil.cs" />
-    <Compile Include="MRC\Utils\Gene\SilhouetteUtil.cs" />
-    <Compile Include="MRC\Utils\Gene\SkinColorUtils.cs" />
-    <Compile Include="MRC\Utils\Misc\StringFloatMap.cs" />
-    <Compile Include="MRC\Utils\Misc\WorkerDroneBackstoryResolver.cs" />
-    <Compile Include="MRC\Utils\Misc\DroneHelper.cs" />
-    <Compile Include="MRC\Utils\modExtensions\ObservationLearningExtension.cs" />
-    <Compile Include="MRC\Utils\modExtensions\RandomSkinColorsExtension.cs" />
-    <Compile Include="MRC\Utils\modExtensions\Recipe\NeutroamineExtractionExtension.cs" />
-    <Compile Include="MRC\Utils\modExtensions\SilhouetteGeneExtension.cs" />
-    <Compile Include="MRC\Workers\Thought\ThoughtWorker_NeedRoboticRest.cs" />
-    <Compile Include="MRWD\Defs\WorkerDroneSettingsDef.cs" />
-    <Compile Include="MRWD\WorkerDroneDependency.cs" />
-    <Compile Include="MRWD\Comps\Gene\Gene_DroneBody.cs" />
-    <Compile Include="MRWD\Comps\Map\MapComponent_DoorMetrics.cs" />
-    <Compile Include="MRWD\Comps\Need\Need_DoorSatisfaction.cs" />
-    <Compile Include="MRWD\DefOfs\MRWD_DefOf.cs" />
-    <Compile Include="MRWD\Patches\Hediff\MurderRimCore_SkinColor_Patch.cs" />
-    <Compile Include="MRWD\Patches\Thing\Destroy\HarmonyInit_DoorLossGrief.cs" />
-    <Compile Include="MRWD\Workers\Thought\ThoughtWorker_DoorEnthusiastThought.cs" />
+    <Compile Include="Mod\MurderRimCoreMod.cs" />
+    <Compile Include="Mod\Settings\WorkerDroneBackstorySettings.cs" />
+    <Compile Include="Mod\Settings\WorkerDroneSpawnModSettings.cs" />
+    <Compile Include="Patches\Drivers\Job\MurderRimCore_Toils_LayDown_LayDown_Patch.cs" />
+    <Compile Include="Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_GetPriority_Patch.cs" />
+    <Compile Include="Patches\Givers\Job\MurderRimCore_JobGiver_GetRest_TryGiveJob_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\ConditionalGraphicSet\GetState\MurderRimCore_ConditionalGraphicSet_GetState_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\FleshTypeDef\ChooseWoundOverlay\MurderRimCore_FleshTypeDef_ChooseWoundOverlay_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\VanillaExpandedFramework__DamageWorker_AddInjury_ApplyToPawn_Patch\GetEffecterDef\MurderRimCore_GetEffecterDef_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\VEF_HealthCardUtility_DrawHediffRow_Patch\HasBloodIconChangingGene\MurderRimCore_HasBloodIconChangingGene_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\VEF_Pawn_HealthTracker_DropBloodFilth_Patch\MurderRimCore_TryChangeBloodFilth_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VEF\VEF_Pawn_HealthTracker_DropBloodSmear_Patch\MurderRimCore_TryChangeBloodSmear_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\GeneWindow\MurderRimCore_VREAndroids_ExclusionTagsHighlight_Patch.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Rimworld\GeneUtility\GenesInOrder\MurderRimCore_GeneUtility_GenesInOrder.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\AddGene\MurderRimCore_Pawn_GeneTracker_AddGene.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Rimworld\Pawn_GeneTracker\RemoveGene\MurderRimCore_Pawn_GeneTracker_RemoveGene.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Utils\get_AndroidGenesGenesInOrder\MurderRimCore_Utils_StaticConstructor.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Utils\IsAndroidGene\MurderRimCore_IsAndroidGene.cs" />
+    <Compile Include="Patches\OtherMods\VREAndroids\Utils\Utils_TryAssignBackstory_WorkerDrones.cs" />
+    <Compile Include="Patches\PawnGenerator\MurderRimCore_Pawn_GeneSkinColorPatch.cs" />
+    <Compile Include="Patches\PawnGenerator\PawnGenerator_GenerateSkills_WorkerDronesAgePatch.cs" />
+    <Compile Include="Patches\PawnGenerator\WorkerDrone_SpawnVisualsPatch.cs" />
+    <Compile Include="Patches\RestUtility\CanFallAsleep\MurderRimCore_RestUtility_CanFallAsleep_Patch.cs" />
+    <Compile Include="Patches\RestUtility\ShouldWakeUp\MurderRimCore_RestUtility_ShouldWakeUp_Patch.cs" />
+    <Compile Include="Patches\RestUtility\TimetablePreventsLayDown\MurderRimCore_RestUtility_TimetablePreventsLayDown_Patch.cs" />
+    <Compile Include="Patches\Thoughts\Thought_MemorySocial\MurderRimCore_Thought_MemorySocial_OpinionOffset_Patch.cs" />
+    <Compile Include="Patches\Thoughts\Thought_SituationalSocial\MurderRimCore_Thought_SituationalSocial_OpinionOffset_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recipe\Recipe_ExtractNeutroamine.cs" />
+    <Compile Include="Utils\Gene\SilhouetteUtil.cs" />
+    <Compile Include="Utils\Gene\SkinColorUtils.cs" />
+    <Compile Include="Utils\Misc\DroneHelper.cs" />
+    <Compile Include="Utils\Misc\StringFloatMap.cs" />
+    <Compile Include="Utils\Misc\WorkerDroneBackstoryResolver.cs" />
+    <Compile Include="Utils\Misc\WorkerDroneVisuals.cs" />
+    <Compile Include="Utils\modExtensions\RandomSkinColorsExtension.cs" />
+    <Compile Include="Utils\modExtensions\Recipe\NeutroamineExtractionExtension.cs" />
+    <Compile Include="Utils\modExtensions\SilhouetteGeneExtension.cs" />
+    <Compile Include="Workers\Thought\ThoughtWorker_NeedRoboticRest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MRAR\" />
-    <Folder Include="MRAS\" />
-    <Folder Include="MRC\Givers\" />
-    <Folder Include="MRC\Patches\OtherMods\VREAndroids\Rimworld\PawnBioAndNameGenerator\GiveShuffledBioTo\" />
-    <Folder Include="MRC\ScenPart\" />
-    <Folder Include="MRC\Utils\Helpers\" />
-    <Folder Include="MRC\Utils\modExtensions\Backstory\" />
-    <Folder Include="MRC\Utils\modExtensions\Traits\" />
-    <Folder Include="MRHP\" />
-    <Folder Include="MRWD\Comps\Game\" />
-    <Folder Include="MRWD\Givers\" />
-    <Folder Include="MRWD\Patches\OtherMods\VREAndroids\Utils\TryAssignBackstory\" />
+    <Folder Include="Patches\OtherMods\VREAndroids\Rimworld\PawnBioAndNameGenerator\GiveShuffledBioTo\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

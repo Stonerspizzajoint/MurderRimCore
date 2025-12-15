@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D49A39EA-7D76-47AA-9935-9C3253A21936}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MRHP</RootNamespace>
+    <AssemblyName>MRHP</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2009463077\1.5\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MRWD">
+      <HintPath>..\..\..\..\TheWorkerDrones\1.6\Assemblies\MRWD.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MurderRimCore">
+      <HintPath>..\..\..\..\MurderRimCore\1.6\Assemblies\MurderRimCore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VEF">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.6\Assemblies\VEF.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2023507013\1.5\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VREAndroids">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\2975771801\1.6\Assemblies\VREAndroids.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comps\Ability\Comp\CompAbilityBootLoop.cs" />
+    <Compile Include="comps\Ability\Prop\CompProperties_AbilityBootLoop.cs" />
+    <Compile Include="comps\Ability\Prop\CompProperties_SentinelSettings.cs" />
+    <Compile Include="comps\Hediff\Comp\HediffComp_Pinned.cs" />
+    <Compile Include="comps\Hediff\Comp\HediffComp_RemoveOnTend.cs" />
+    <Compile Include="comps\Hediff\Prop\HediffCompProperties_Pinned.cs" />
+    <Compile Include="comps\Hediff\Prop\HediffCompProperties_RemoveOnTend.cs" />
+    <Compile Include="comps\Thing\Comp\CompScrapEater.cs" />
+    <Compile Include="comps\Thing\Comp\SentinelPounceFlyer.cs" />
+    <Compile Include="comps\Thing\Props\CompProperties_ScrapEater.cs" />
+    <Compile Include="comps\Thing\Verb\Verb_SentinelJump.cs" />
+    <Compile Include="defofs\MRHP_DefOf.cs" />
+    <Compile Include="driver\Job\JobDriver_ExecuteAndroid.cs" />
+    <Compile Include="driver\Job\JobDriver_RobotSelfSeal.cs" />
+    <Compile Include="driver\Job\JobDriver_SentinelMaul.cs" />
+    <Compile Include="driver\Job\JobDriver_SentinelPounce.cs" />
+    <Compile Include="giver\Job\JobGiver_AndroidRage.cs" />
+    <Compile Include="giver\Job\JobGiver_RobotSelfSeal.cs" />
+    <Compile Include="giver\Job\JobGiver_SentinelFinishOff.cs" />
+    <Compile Include="mapgeneration\ComplexThreatWorker\ComplexThreatWorker_SleepingSentinels.cs" />
+    <Compile Include="mapgeneration\Genstep\GenStep_SentinelComplex.cs" />
+    <Compile Include="mapgeneration\LayoutWorker_DebugSentinel.cs" />
+    <Compile Include="mapgeneration\RoomContents\RoomContentsWorker_LabGeneral.cs" />
+    <Compile Include="mapgeneration\Symbols\SymbolResolver_SentinelComplex.cs" />
+    <Compile Include="mentalstate\MentalState_AndroidRage.cs" />
+    <Compile Include="patches\OtherMods\VEF\AnimalBehaviors\Patch_FinalizeIngestAnything.cs" />
+    <Compile Include="patches\OtherMods\VEF\AnimalBehaviors\Patch_FindWeirdFoodInMap.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\HealthCardUtility\Patch_ShouldBeTendedNowByPlayer.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\HealthCardUtility\UI\Patch_HealthCardUtility_Overview.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\HediffUtils\Patch_HediffUtility_CanHealfromTending.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\HediffUtils\Patch_HediffUtility_CanHealNaturally.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\JCJensonRobotBloodPatches\JCJensonRobotBloodPatches.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\NotifyDamageTaken\Patch_StunHandler_Notify_DamageApplied.cs" />
+    <Compile Include="patches\OtherMods\VREAndroids\WorkGiver\Patch_WorkGiver_RepairAndroid_HasJobOn.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quest\Node\QuestNode_Root_SentinelBunker.cs" />
+    <Compile Include="recipe\Recipe_AdministerNeutroamineForSentinel.cs" />
+    <Compile Include="thinknode\ThinkNode_SentinelTrigger.cs" />
+    <Compile Include="utils\AI\SentinelAIUtils.cs" />
+    <Compile Include="utils\Misc\BootLoopUtils.cs" />
+    <Compile Include="utils\Misc\RoboticUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ui\Float\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

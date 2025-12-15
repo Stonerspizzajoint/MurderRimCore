@@ -1,0 +1,6 @@
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Source\MRHP\obj\Debug\MRHP.csproj.AssemblyReference.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Source\MRHP\obj\Debug\MRHP.csproj.CoreCompileInputs.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Assemblies\MRHP.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Assemblies\MRHP.pdb
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Source\MRHP\obj\Debug\MRHP.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\HazardProtocol\1.6\Source\MRHP\obj\Debug\MRHP.pdb

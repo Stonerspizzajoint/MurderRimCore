@@ -1,4 +1,5 @@
 <Defs>
+
 	<VREAndroids.AndroidGeneDef ParentName="MRC_HardwareNoVEF">
 		<defName>MRC_SleepMode</defName>
 		<label>Sleep Mode 2.0</label>

@@ -1,0 +1,12 @@
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Assemblies\MRWD.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Assemblies\MRWD.pdb
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.csproj.AssemblyReference.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.csproj.CoreCompileInputs.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\TheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.pdb
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.csproj.AssemblyReference.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.csproj.CoreCompileInputs.cache
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Source\MRWD\obj\Debug\MRWD.pdb
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Assemblies\MRWD.dll
+C:\Users\stone\OneDrive\Desktop\Mods\MuderRim Mods\MurderRim Core\MurderRimTheWorkerDrones\1.6\Assemblies\MRWD.pdb

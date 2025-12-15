@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\hazardprotocol\\1.6\\source\\mrhp\\thinknode\\thinknode_sentineltrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:thinknode\\thinknode_sentineltrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\hazardprotocol\\1.6\\source\\mrhp\\patches\\othermods\\vef\\animalbehaviors\\patch_findweirdfoodinmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:patches\\othermods\\vef\\animalbehaviors\\patch_findweirdfoodinmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThinkNode_SentinelTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\thinknode\\ThinkNode_SentinelTrigger.cs",
+              "RelativeDocumentMoniker": "thinknode\\ThinkNode_SentinelTrigger.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\thinknode\\ThinkNode_SentinelTrigger.cs",
+              "RelativeToolTip": "thinknode\\ThinkNode_SentinelTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T00:42:56.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Patch_FindWeirdFoodInMap.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_FindWeirdFoodInMap.cs",
+              "RelativeDocumentMoniker": "patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_FindWeirdFoodInMap.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_FindWeirdFoodInMap.cs",
+              "RelativeToolTip": "patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_FindWeirdFoodInMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T13:56:59.064Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
