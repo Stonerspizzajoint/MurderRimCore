@@ -1,7 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\HazardProtocol\\1.6\\Source\\MRHP\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimhazardprotocol\\1.6\\source\\mrhp\\driver\\job\\jobdriver_ingestscrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:driver\\job\\jobdriver_ingestscrap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimhazardprotocol\\1.6\\source\\mrhp\\patches\\othermods\\vef\\animalbehaviors\\patch_jobgiver_getweirdfood_trygivejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:patches\\othermods\\vef\\animalbehaviors\\patch_jobgiver_getweirdfood_trygivejob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimhazardprotocol\\1.6\\source\\mrhp\\comps\\thing\\comp\\compscrapeater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:comps\\thing\\comp\\compscrapeater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimhazardprotocol\\1.6\\source\\mrhp\\defofs\\mrhp_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D49A39EA-7D76-47AA-9935-9C3253A21936}|MRHP.csproj|solutionrelative:defofs\\mrhp_defof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobDriver_IngestScrap.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\driver\\Job\\JobDriver_IngestScrap.cs",
+              "RelativeDocumentMoniker": "driver\\Job\\JobDriver_IngestScrap.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\driver\\Job\\JobDriver_IngestScrap.cs",
+              "RelativeToolTip": "driver\\Job\\JobDriver_IngestScrap.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:25:47.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Patch_JobGiver_GetWeirdFood_TryGiveJob.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_JobGiver_GetWeirdFood_TryGiveJob.cs",
+              "RelativeDocumentMoniker": "patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_JobGiver_GetWeirdFood_TryGiveJob.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_JobGiver_GetWeirdFood_TryGiveJob.cs",
+              "RelativeToolTip": "patches\\OtherMods\\VEF\\AnimalBehaviors\\Patch_JobGiver_GetWeirdFood_TryGiveJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:23:46.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompScrapEater.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\comps\\Thing\\Comp\\CompScrapEater.cs",
+              "RelativeDocumentMoniker": "comps\\Thing\\Comp\\CompScrapEater.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\comps\\Thing\\Comp\\CompScrapEater.cs",
+              "RelativeToolTip": "comps\\Thing\\Comp\\CompScrapEater.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:22:09.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MRHP_DefOf.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\defofs\\MRHP_DefOf.cs",
+              "RelativeDocumentMoniker": "defofs\\MRHP_DefOf.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimHazardProtocol\\1.6\\Source\\MRHP\\defofs\\MRHP_DefOf.cs",
+              "RelativeToolTip": "defofs\\MRHP_DefOf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:20:42.486Z",
+              "EditorCaption": ""
             }
           ]
         }

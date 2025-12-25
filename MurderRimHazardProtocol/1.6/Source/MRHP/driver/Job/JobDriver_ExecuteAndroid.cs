@@ -24,23 +24,18 @@ namespace MRHP
 
             if (isExecutingPhase && dinfo.Amount >= DamageThresholdToInterrupt)
             {
-                // Cache references
                 Pawn victim = TargetA.Thing as Pawn;
                 Map map = pawn.Map;
                 Pawn self = pawn;
 
+                // KEEP THIS TEXT (Feedback for failure)
                 if (map != null)
                 {
                     MoteMaker.ThrowText(self.DrawPos, map, "INTERRUPTED!", Color.white);
                 }
 
-                // 1. TRIGGER COOLDOWN (Fixes the loop)
                 TriggerCooldown();
-
-                // 2. Force End
                 self.jobs.EndCurrentJob(JobCondition.InterruptForced);
-
-                // 3. Trigger Rage Aggro Switch
                 SentinelAIUtils.TryTriggerRage(self, victim, map);
             }
         }
@@ -59,7 +54,12 @@ namespace MRHP
             Toil tearApart = new Toil();
             tearApart.defaultCompleteMode = ToilCompleteMode.Delay;
             tearApart.defaultDuration = ExecutionDuration;
+
+            // VISUAL 1: The Progress Bar (UI Indicator)
             tearApart.WithProgressBarToilDelay(TargetIndex.A);
+
+            // AUDIO: Grinding Metal Sound
+            tearApart.PlaySustainerOrSound(SoundDefOf.Recipe_ButcherCorpseMechanoid);
 
             tearApart.initAction = () =>
             {
@@ -72,10 +72,11 @@ namespace MRHP
                     if (pin != null) victim.health.RemoveHediff(pin);
                 }
 
+                // Initial Burst
                 if (pawn.Map != null)
                 {
                     FleckMaker.ThrowMicroSparks(TargetA.Cell.ToVector3Shifted(), pawn.Map);
-                    MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "EXECUTING...", Color.red);
+                    // REMOVED: "EXECUTING..." text
                 }
             };
 
@@ -88,32 +89,33 @@ namespace MRHP
                     return;
                 }
 
+                // Every 1 second (approx)
                 if (pawn.IsHashIntervalTick(60))
                 {
-                    if (pawn.Map != null) MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "TEARING", Color.yellow);
+                    // REMOVED: "TEARING" text
 
+                    // Apply Damage
                     pawn.Drawer.Notify_MeleeAttackOn(victim);
                     DamageInfo tearDinfo = new DamageInfo(DamageDefOf.Scratch, 1, 0, -1, pawn, null, null);
                     victim.TakeDamage(tearDinfo);
 
+                    // Extra Impact Visuals
                     SoundDefOf.MetalHitImportant.PlayOneShot(pawn);
                     FleckMaker.ThrowMicroSparks(victim.DrawPos, pawn.Map);
+
+                    // Add a small shake to the victim to visualize the violence
+                    if (victim.Drawer != null && victim.Drawer.renderer != null)
+                    {
+                        // A slight white flash indicating impact
+                        victim.Drawer.Notify_DamageApplied(tearDinfo);
+                    }
                 }
             };
 
-            // SAFETY: If this Toil ends prematurely (Interrupt/Fail), ensure cooldown is set.
             tearApart.AddFinishAction(() =>
             {
-                // If we are exiting this toil, but we haven't reached the final kill toil yet...
-                // We check if the job was successful or not in the final step, but simpler:
-                // If the victim is alive when this toil ends, it usually means we didn't finish.
-                // However, normal flow moves to next toil. 
-                // So we rely on Notify_DamageTaken for damage interrupts.
-                // This is just a fallback for other random interrupts.
-
                 if (pawn.CurJob.def != MRHP_DefOf.MRHP_ExecuteAndroid)
                 {
-                    // Job changed/ended unexpectedly
                     TriggerCooldown();
                 }
             });
@@ -136,7 +138,6 @@ namespace MRHP
             };
         }
 
-        // --- HELPER ---
         private void TriggerCooldown()
         {
             if (pawn.MentalState is MentalState_AndroidRage rage)

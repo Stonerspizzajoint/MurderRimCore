@@ -71,6 +71,7 @@
     <Compile Include="comps\Need\Need_DoorSatisfaction.cs" />
     <Compile Include="defofs\MRWD_DefOf.cs" />
     <Compile Include="defs\WorkerDroneSettingsDef.cs" />
+    <Compile Include="patches\HarmonyPatches.cs" />
     <Compile Include="patches\Hediff\MurderRimCore_SkinColor_Patch.cs" />
     <Compile Include="patches\Thing\despawn\Thing_DeSpawn_InvalidateObservationCache.cs" />
     <Compile Include="patches\Thing\Destroy\HarmonyInit_DoorLossGrief.cs" />

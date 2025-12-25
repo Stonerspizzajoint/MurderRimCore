@@ -119,10 +119,20 @@ namespace MRHP
         {
             if (attacker == null || victim == null) return;
 
+            // VISUAL: Always play an impact effect upon landing
+            if (attacker.Map != null)
+            {
+                // A heavy dust cloud to show weight
+                FleckMaker.ThrowDustPuffThick(attacker.Position.ToVector3Shifted(), attacker.Map, 2.0f, Color.grey);
+
+                // Optional: A subtle camera shake if you want real weight?
+                // Find.CameraDriver.shaker.DoShake(1.0f); 
+            }
+
             // 1. Check Reservations (Prevent stacking bugs)
             if (!attacker.CanReserve(victim, 1, -1, null, false))
             {
-                if (attacker.Map != null) MoteMaker.ThrowText(attacker.DrawPos, attacker.Map, "Too Crowded", Color.grey);
+                // Removed text
                 attacker.jobs.StartJob(JobMaker.MakeJob(JobDefOf.AttackMelee, victim), JobCondition.InterruptForced);
                 return;
             }
@@ -144,7 +154,7 @@ namespace MRHP
             {
                 MoteMaker.ThrowText(victim.DrawPos, victim.Map, "DODGED!", Color.green);
 
-                // NEW: Play Dodge Sound (DefOf usage)
+                // Sound: Whoosh/Dodge
                 MRHP_DefOf.Pawn_MeleeDodge?.PlayOneShot(victim);
 
                 if (victimSize > attackerSize * 1.5f)
@@ -157,7 +167,7 @@ namespace MRHP
             }
             else
             {
-                // OPTIMIZED: Use MRHP_DefOf.MRHP_Pinned instead of Named()
+                // Success: Pin
                 Hediff pin = HediffMaker.MakeHediff(MRHP_DefOf.MRHP_Pinned, victim);
                 victim.health.AddHediff(pin);
 
@@ -169,7 +179,9 @@ namespace MRHP
 
                 MoteMaker.ThrowText(victim.DrawPos, victim.Map, "PINNED!", Color.red);
 
-                // OPTIMIZED: Use MRHP_DefOf.MRHP_SentinelMaul
+                // Sound: Heavy impact or Thud
+                // SoundDefOf.BodyFall_Generic_Heavy.PlayOneShot(victim);
+
                 Job maulJob = JobMaker.MakeJob(MRHP_DefOf.MRHP_SentinelMaul, victim);
                 attacker.jobs.StartJob(maulJob, JobCondition.InterruptForced);
             }
@@ -220,7 +232,6 @@ namespace MRHP
 
             if (executioner.Map != null)
             {
-                MoteMaker.ThrowText(executioner.DrawPos, executioner.Map, "TERMINATED", Color.red);
                 SoundDefOf.Building_Deconstructed.PlayOneShot(executioner);
             }
 

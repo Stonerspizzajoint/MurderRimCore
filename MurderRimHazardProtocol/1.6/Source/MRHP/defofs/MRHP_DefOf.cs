@@ -19,6 +19,7 @@ namespace MRHP
         public static JobDef MRHP_SentinelMaul;
         public static JobDef MRHP_SentinelPounceJob;
         public static JobDef MRHP_RobotSelfSeal;
+        public static JobDef MRHP_IngestScrap;
 
         public static AbilityDef MRHP_SentinelPounce;
         public static AbilityDef MRHP_SentinelFlash;
@@ -27,7 +28,9 @@ namespace MRHP
         public static AndroidGeneDef MRHP_BootLoopCritical;
 
         public static HediffDef MRHP_Pinned;
+        public static HediffDef MRHP_BootLoop;
         public static HediffDef MRHP_BootLoopPerminent;
+        public static HediffDef MRHP_MaterialDeprived;
 
         public static ComplexLayoutDef MRHP_Complex_SentinelBunker;
 
@@ -41,6 +44,8 @@ namespace MRHP
         public static StatDef EMPResistance;
 
         public static ThingDef MRHP_SentinelLeapFlyer;
+
+        public static ThingDef MRHP_Mote_BootLoop;
 
         static MRHP_DefOf()
         {

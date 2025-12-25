@@ -29,7 +29,6 @@ namespace MRHP
             base.Notify_DamageTaken(dinfo);
             if (isMaulingPhase)
             {
-                // Delegate to Utils
                 bool staggered = SentinelAIUtils.CheckStaggerOnDamage(
                     pawn,
                     cumulativeDamage,
@@ -59,18 +58,19 @@ namespace MRHP
             Toil maul = new Toil();
             maul.defaultCompleteMode = ToilCompleteMode.Never;
 
+            // OPTIONAL: Add a subtle effect to show activity if desired
+            // maul.WithEffect(EffecterDefOf.MeatExplosion, TargetIndex.A); // Too messy?
+
             maul.initAction = () =>
             {
                 isMaulingPhase = true;
                 cumulativeDamage = 0f;
-                if (pawn.Map != null) MoteMaker.ThrowText(pawn.DrawPos, pawn.Map, "MAULING", Color.red);
+                // Text removed
             };
 
             maul.tickAction = () =>
             {
                 Pawn victim = TargetA.Thing as Pawn;
-
-                // Delegate entire tick logic to Utils
                 SentinelAIUtils.PerformMaulAttack(pawn, victim);
             };
 
