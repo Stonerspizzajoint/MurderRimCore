@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimtheworkerdrones\\1.6\\source\\mrwd\\patches\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|solutionrelative:patches\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimtheworkerdrones\\1.6\\source\\mrwd\\patches\\pawn\\apparel\\patch_pawnapparel_psychologicallynude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|solutionrelative:patches\\pawn\\apparel\\patch_pawnapparel_psychologicallynude.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimtheworkerdrones\\1.6\\source\\mrwd\\patches\\thing\\destroy\\harmonyinit_doorlossgrief.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|solutionrelative:patches\\thing\\destroy\\harmonyinit_doorlossgrief.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimtheworkerdrones\\1.6\\source\\mrwd\\patches\\pawn\\apparel\\patch_pawnapparel_anyclothing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02C43895-090B-4CF7-89B9-421B6F4BCF82}|MRWD.csproj|solutionrelative:patches\\pawn\\apparel\\patch_pawnapparel_anyclothing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HarmonyPatches.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\HarmonyPatches.cs",
-              "RelativeDocumentMoniker": "patches\\HarmonyPatches.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\HarmonyPatches.cs",
-              "RelativeToolTip": "patches\\HarmonyPatches.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABGAAAAAAAAAA==",
+              "Title": "Patch_PawnApparel_PsychologicallyNude.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Pawn\\Apparel\\Patch_PawnApparel_PsychologicallyNude.cs",
+              "RelativeDocumentMoniker": "patches\\Pawn\\Apparel\\Patch_PawnApparel_PsychologicallyNude.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Pawn\\Apparel\\Patch_PawnApparel_PsychologicallyNude.cs",
+              "RelativeToolTip": "patches\\Pawn\\Apparel\\Patch_PawnApparel_PsychologicallyNude.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T00:24:30.009Z",
+              "WhenOpened": "2026-01-02T20:07:33.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HarmonyInit_DoorLossGrief.cs",
-              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Thing\\Destroy\\HarmonyInit_DoorLossGrief.cs",
-              "RelativeDocumentMoniker": "patches\\Thing\\Destroy\\HarmonyInit_DoorLossGrief.cs",
-              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Thing\\Destroy\\HarmonyInit_DoorLossGrief.cs",
-              "RelativeToolTip": "patches\\Thing\\Destroy\\HarmonyInit_DoorLossGrief.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Title": "Patch_PawnApparel_AnyClothing.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Pawn\\Apparel\\Patch_PawnApparel_AnyClothing.cs",
+              "RelativeDocumentMoniker": "patches\\Pawn\\Apparel\\Patch_PawnApparel_AnyClothing.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimTheWorkerDrones\\1.6\\Source\\MRWD\\patches\\Pawn\\Apparel\\Patch_PawnApparel_AnyClothing.cs",
+              "RelativeToolTip": "patches\\Pawn\\Apparel\\Patch_PawnApparel_AnyClothing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T04:02:52.789Z",
+              "WhenOpened": "2026-01-02T20:01:15.969Z",
               "EditorCaption": ""
             }
           ]

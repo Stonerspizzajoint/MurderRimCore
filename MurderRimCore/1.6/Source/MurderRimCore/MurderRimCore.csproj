@@ -110,6 +110,8 @@
     <Compile Include="Patches\Thoughts\Thought_SituationalSocial\MurderRimCore_Thought_SituationalSocial_OpinionOffset_Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipe\Recipe_ExtractNeutroamine.cs" />
+    <Compile Include="Utils\Gene\Add\Patch_PawnGeneTracker_AddGene.cs" />
+    <Compile Include="Utils\Gene\Remove\Patch_PawnGeneTracker_RemoveGene.cs" />
     <Compile Include="Utils\Gene\SilhouetteUtil.cs" />
     <Compile Include="Utils\Gene\SkinColorUtils.cs" />
     <Compile Include="Utils\Misc\DroneHelper.cs" />
@@ -119,6 +121,8 @@
     <Compile Include="Utils\modExtensions\RandomSkinColorsExtension.cs" />
     <Compile Include="Utils\modExtensions\Recipe\NeutroamineExtractionExtension.cs" />
     <Compile Include="Utils\modExtensions\SilhouetteGeneExtension.cs" />
+    <Compile Include="Utils\modExtensions\Trait\TraitForceOnGeneModExtension.cs" />
+    <Compile Include="Utils\Trait\TraitGeneUtils.cs" />
     <Compile Include="Workers\Thought\ThoughtWorker_NeedRoboticRest.cs" />
   </ItemGroup>
   <ItemGroup>

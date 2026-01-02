@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\comps\\need\\need_sleepmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\utils\\gene\\add\\patch_pawngenetracker_addgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\gene\\add\\patch_pawngenetracker_addgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\utils\\trait\\traitgeneutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\trait\\traitgeneutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\utils\\gene\\remove\\patch_pawngenetracker_removegene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\gene\\remove\\patch_pawngenetracker_removegene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\utils\\modextensions\\trait\\traitforceongenemodextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\modextensions\\trait\\traitforceongenemodextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|c:\\users\\stone\\onedrive\\desktop\\mods\\muderrim mods\\murderrim core\\murderrimcore\\1.6\\source\\murderrimcore\\utils\\gene\\silhouetteutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\gene\\silhouetteutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\utils\\misc\\dronehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:utils\\misc\\dronehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\comps\\need\\need_sleepmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A7FA55F-4BDE-45BA-9C05-5D6FA4FD38FD}|MurderRimCore.csproj|solutionrelative:comps\\need\\need_sleepmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,16 +46,92 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TraitGeneUtils.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Trait\\TraitGeneUtils.cs",
+              "RelativeDocumentMoniker": "Utils\\Trait\\TraitGeneUtils.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Trait\\TraitGeneUtils.cs",
+              "RelativeToolTip": "Utils\\Trait\\TraitGeneUtils.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wBsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:27:27.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TraitForceOnGeneModExtension.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\modExtensions\\Trait\\TraitForceOnGeneModExtension.cs",
+              "RelativeDocumentMoniker": "Utils\\modExtensions\\Trait\\TraitForceOnGeneModExtension.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\modExtensions\\Trait\\TraitForceOnGeneModExtension.cs",
+              "RelativeToolTip": "Utils\\modExtensions\\Trait\\TraitForceOnGeneModExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:28:27.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patch_PawnGeneTracker_RemoveGene.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\Remove\\Patch_PawnGeneTracker_RemoveGene.cs",
+              "RelativeDocumentMoniker": "Utils\\Gene\\Remove\\Patch_PawnGeneTracker_RemoveGene.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\Remove\\Patch_PawnGeneTracker_RemoveGene.cs",
+              "RelativeToolTip": "Utils\\Gene\\Remove\\Patch_PawnGeneTracker_RemoveGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:34:10.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Patch_PawnGeneTracker_AddGene.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\Add\\Patch_PawnGeneTracker_AddGene.cs",
+              "RelativeDocumentMoniker": "Utils\\Gene\\Add\\Patch_PawnGeneTracker_AddGene.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\Add\\Patch_PawnGeneTracker_AddGene.cs",
+              "RelativeToolTip": "Utils\\Gene\\Add\\Patch_PawnGeneTracker_AddGene.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowBMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:34:00.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SilhouetteUtil.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\SilhouetteUtil.cs",
+              "RelativeDocumentMoniker": "Utils\\Gene\\SilhouetteUtil.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Gene\\SilhouetteUtil.cs",
+              "RelativeToolTip": "Utils\\Gene\\SilhouetteUtil.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:33:26.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DroneHelper.cs",
+              "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Misc\\DroneHelper.cs",
+              "RelativeDocumentMoniker": "Utils\\Misc\\DroneHelper.cs",
+              "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Utils\\Misc\\DroneHelper.cs",
+              "RelativeToolTip": "Utils\\Misc\\DroneHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T21:30:28.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Need_SleepMode.cs",
               "DocumentMoniker": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Comps\\Need\\Need_SleepMode.cs",
               "RelativeDocumentMoniker": "Comps\\Need\\Need_SleepMode.cs",
               "ToolTip": "C:\\Users\\stone\\OneDrive\\Desktop\\Mods\\MuderRim Mods\\MurderRim Core\\MurderRimCore\\1.6\\Source\\MurderRimCore\\Comps\\Need\\Need_SleepMode.cs",
               "RelativeToolTip": "Comps\\Need\\Need_SleepMode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T22:09:12.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-15T22:09:12.963Z"
             }
           ]
         }

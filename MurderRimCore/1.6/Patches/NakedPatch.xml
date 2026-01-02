@@ -1,0 +1,8 @@
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName='Naked']/nullifyingGenes</xpath>
+    <value>
+        <li>MRWD_DroneBody</li>
+    </value>
+  </Operation>
+</Patch>

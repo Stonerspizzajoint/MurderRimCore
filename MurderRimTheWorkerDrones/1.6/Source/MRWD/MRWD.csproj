@@ -73,6 +73,8 @@
     <Compile Include="defs\WorkerDroneSettingsDef.cs" />
     <Compile Include="patches\HarmonyPatches.cs" />
     <Compile Include="patches\Hediff\MurderRimCore_SkinColor_Patch.cs" />
+    <Compile Include="patches\Pawn\Apparel\Patch_PawnApparel_PsychologicallyNude.cs" />
+    <Compile Include="patches\Pawn\Apparel\Patch_PawnApparel_AnyClothing.cs" />
     <Compile Include="patches\Thing\despawn\Thing_DeSpawn_InvalidateObservationCache.cs" />
     <Compile Include="patches\Thing\Destroy\HarmonyInit_DoorLossGrief.cs" />
     <Compile Include="patches\Thing\pawn\Skill\SkillRecord\Learn\SkillRecord_Learn_ObservationBuffer.cs" />
@@ -84,5 +86,6 @@
     <Compile Include="utils\modExtensions\ObservationLearningExtension.cs" />
     <Compile Include="workers\Thought\ThoughtWorker_DoorEnthusiastThought.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
